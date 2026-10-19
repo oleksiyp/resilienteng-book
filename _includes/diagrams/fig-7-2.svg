@@ -1,0 +1,45 @@
+<div class="dg-figure" data-fig="fig-7-2" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 348" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-7-2-title fig-7-2-desc">
+<title id="fig-7-2-title">Credential lifetimes against a 38-minute revocation</title>
+<desc id="fig-7-2-desc">Lifetimes on a logarithmic scale from one minute to beyond a year. Rowmate&#x27;s static API key had lived 26 months and would have lived until someone revoked it; Encore revoked it 38 minutes after the leak. A partner OAuth token lives 15 minutes, a workload SVID one hour, renewed at half-life, and a break-glass session 60 minutes.</desc>
+<defs><marker id="fig-7-2-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-7-2-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-7-2-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-axis" x1="200" y1="256" x2="832" y2="256"/>
+<line class="dg-axis" x1="200" y1="256" x2="200" y2="56"/>
+<line class="dg-axis" x1="200.0" y1="256" x2="200.0" y2="260"/>
+<text class="dg-tick" x="200.0" y="272" text-anchor="middle">1 MIN</text>
+<line class="dg-axis" x1="318.0" y1="256" x2="318.0" y2="260"/>
+<text class="dg-tick" x="318.0" y="272" text-anchor="middle">15 MIN</text>
+<line class="dg-axis" x1="378.4" y1="256" x2="378.4" y2="260"/>
+<text class="dg-tick" x="378.4" y="272" text-anchor="middle">1 H</text>
+<line class="dg-axis" x1="516.8" y1="256" x2="516.8" y2="260"/>
+<text class="dg-tick" x="516.8" y="272" text-anchor="middle">1 DAY</text>
+<line class="dg-axis" x1="665.6" y1="256" x2="665.6" y2="260"/>
+<text class="dg-tick" x="665.6" y="272" text-anchor="middle">1 MONTH</text>
+<line class="dg-axis" x1="773.9" y1="256" x2="773.9" y2="260"/>
+<text class="dg-tick" x="773.9" y="272" text-anchor="middle">1 YEAR</text>
+<text class="dg-axis-label" x="832" y="288" text-anchor="end">LIFETIME (LOG SCALE)</text>
+<line class="dg-grid" x1="318.0" y1="56" x2="318.0" y2="256"/>
+<line class="dg-grid" x1="378.4" y1="56" x2="378.4" y2="256"/>
+<line class="dg-grid" x1="516.8" y1="56" x2="516.8" y2="256"/>
+<line class="dg-grid" x1="665.6" y1="56" x2="665.6" y2="256"/>
+<line class="dg-grid" x1="773.9" y1="56" x2="773.9" y2="256"/>
+<rect class="dg-mask" x="236.48" y="32" width="244" height="12" rx="2"/><text class="dg-label dg-l-accent" x="358.48" y="41">ROWMATE KEY REVOKED · 38 MIN AFTER THE LEAK</text>
+<line class="dg-series dg-s-accent" x1="358.5" y1="52" x2="358.5" y2="256" stroke-dasharray="5 4"/>
+<rect class="dg-n dg-n-focal" x="200.0" y="68" width="607.6" height="24" rx="3"/>
+<rect class="dg-n dg-n-backend" x="200.0" y="116" width="118.0" height="24" rx="3"/>
+<rect class="dg-n dg-n-backend" x="200.0" y="164" width="178.4" height="24" rx="3"/>
+<rect class="dg-n dg-n-backend" x="200.0" y="212" width="178.4" height="24" rx="3"/>
+<text class="dg-name" x="104" y="78">Rowmate API key</text><text class="dg-sub" x="104" y="91">static · scoped</text>
+<text class="dg-note" x="799" y="84" text-anchor="end">26 months, and valid until revoked</text>
+<text class="dg-name" x="104" y="126">Partner token</text><text class="dg-sub" x="104" y="139">OAuth · cert-bound</text>
+<text class="dg-note" x="366" y="132" text-anchor="start">15 min: would have expired before the revocation</text>
+<text class="dg-name" x="104" y="174">Workload SVID</text><text class="dg-sub" x="104" y="187">SPIRE · renewed at 30 min</text>
+<text class="dg-note" x="386" y="180" text-anchor="start">1 h</text>
+<text class="dg-name" x="104" y="222">Break-glass session</text><text class="dg-sub" x="104" y="235">two people</text>
+<text class="dg-note" x="386" y="228" text-anchor="start">60 min, posted and reviewed</text>
+<line class="dg-rule" x1="24" y1="308" x2="840" y2="308"/>
+<rect class="dg-n dg-n-focal" x="24" y="319" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="327">Static secret</text>
+<rect class="dg-n dg-n-backend" x="146" y="319" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="168" y="327">Short-lived credential</text>
+</svg></div></div>

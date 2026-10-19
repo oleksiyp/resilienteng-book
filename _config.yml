@@ -1,0 +1,11 @@
+title: "Building Resilient Systems in the AI & Cloud Era"
+tag_line: "production engineering"
+description: "A free online book on production engineering: SLOs, capacity, cloud runtimes, delivery, designing for failure, data and disaster recovery, security operations and AI workloads."
+theme: jekyll-theme-cayman
+# GA4 measurement ID (G-XXXXXXXXXX); empty disables analytics entirely. Shared with the arch book; filter by path.
+google_analytics: "G-N146BPW9JR"
+# Weekly digest API; empty hides every newsletter control
+newsletter_api: ""
+# Firebase Realtime Database URL for the live reader counter and reading statistics; empty hides them
+presence_database_url: ""
+exclude: [scripts, venv, cover-lab, drafting, OUTLINE.md]

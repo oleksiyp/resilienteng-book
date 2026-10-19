@@ -1,0 +1,74 @@
+<div class="dg-figure" data-fig="fig-5-6" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 412" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-5-6-title fig-5-6-desc">
+<title id="fig-5-6-title">Shuffle sharding in a cell</title>
+<desc id="fig-5-6-desc">Eight worker lanes in one self-service cell, with each venue assigned two. Venue A&#x27;s runaway import floods lanes 2 and 5. Venues B and C share one flooded lane each, and their consumers move the work to their other lane; D and E share none; F, by chance, holds the same pair and is hit. Any one neighbor has about a 1-in-28 chance of that, so in a cell of 50 one or two are hit.</desc>
+<defs><marker id="fig-5-6-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-5-6-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-5-6-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<path class="dg-ill-fill-accent" d="M 274,64 h 40 v 244 h -40 z M 430,64 h 40 v 244 h -40 z"/>
+<line class="dg-ill-soft" x1="242" y1="64" x2="242" y2="308"/>
+<line class="dg-ill-soft" x1="294" y1="64" x2="294" y2="308"/>
+<line class="dg-ill-soft" x1="346" y1="64" x2="346" y2="308"/>
+<line class="dg-ill-soft" x1="398" y1="64" x2="398" y2="308"/>
+<line class="dg-ill-soft" x1="450" y1="64" x2="450" y2="308"/>
+<line class="dg-ill-soft" x1="502" y1="64" x2="502" y2="308"/>
+<line class="dg-ill-soft" x1="554" y1="64" x2="554" y2="308"/>
+<line class="dg-ill-soft" x1="606" y1="64" x2="606" y2="308"/>
+<rect class="dg-mask" x="24" y="72" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-focal" x="24" y="72" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="92">Venue A</text>
+<rect class="dg-mask" x="24" y="112" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="112" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="132">Venue B</text>
+<rect class="dg-mask" x="24" y="152" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="152" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="172">Venue C</text>
+<rect class="dg-mask" x="24" y="192" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="192" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="212">Venue D</text>
+<rect class="dg-mask" x="24" y="232" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="232" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="252">Venue E</text>
+<rect class="dg-mask" x="24" y="272" width="144" height="32" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="272" width="144" height="32" rx="6"/>
+<text class="dg-name" x="96" y="292">Venue F</text>
+<text class="dg-note" x="242" y="52" text-anchor="middle">L1</text>
+<text class="dg-note" x="294" y="52" text-anchor="middle">L2</text>
+<text class="dg-note" x="346" y="52" text-anchor="middle">L3</text>
+<text class="dg-note" x="398" y="52" text-anchor="middle">L4</text>
+<text class="dg-note" x="450" y="52" text-anchor="middle">L5</text>
+<text class="dg-note" x="502" y="52" text-anchor="middle">L6</text>
+<text class="dg-note" x="554" y="52" text-anchor="middle">L7</text>
+<text class="dg-note" x="606" y="52" text-anchor="middle">L8</text>
+<line class="dg-ill-ink" x1="294" y1="88" x2="450" y2="88"/>
+<circle class="dg-ill-fill" cx="294" cy="88" r="7"/>
+<circle class="dg-ill-fill" cx="450" cy="88" r="7"/>
+<text class="dg-note" x="648" y="92" text-anchor="start">runaway import floods both</text>
+<line class="dg-ill-ink" x1="294" y1="128" x2="554" y2="128"/>
+<circle class="dg-ill-fill" cx="294" cy="128" r="7"/>
+<circle class="dg-ill-fill" cx="554" cy="128" r="7"/>
+<text class="dg-note" x="648" y="132" text-anchor="start">work moves to L7</text>
+<line class="dg-ill-ink" x1="242" y1="168" x2="450" y2="168"/>
+<circle class="dg-ill-fill" cx="242" cy="168" r="7"/>
+<circle class="dg-ill-fill" cx="450" cy="168" r="7"/>
+<text class="dg-note" x="648" y="172" text-anchor="start">work moves to L1</text>
+<line class="dg-ill-ink" x1="346" y1="208" x2="606" y2="208"/>
+<circle class="dg-ill-fill" cx="346" cy="208" r="7"/>
+<circle class="dg-ill-fill" cx="606" cy="208" r="7"/>
+<text class="dg-note" x="648" y="212" text-anchor="start">untouched</text>
+<line class="dg-ill-ink" x1="398" y1="248" x2="502" y2="248"/>
+<circle class="dg-ill-fill" cx="398" cy="248" r="7"/>
+<circle class="dg-ill-fill" cx="502" cy="248" r="7"/>
+<text class="dg-note" x="648" y="252" text-anchor="start">untouched</text>
+<line class="dg-ill-ink" x1="294" y1="288" x2="450" y2="288"/>
+<circle class="dg-ill-fill" cx="294" cy="288" r="7"/>
+<circle class="dg-ill-fill" cx="450" cy="288" r="7"/>
+<text class="dg-note" x="648" y="292" text-anchor="start">same pair: hit</text>
+<text class="dg-note" x="24" y="344" text-anchor="start">Fixed partitions (four groups of two lanes): a runaway venue takes its whole group, about</text>
+<text class="dg-note" x="24" y="360" text-anchor="start">12 of its 49 neighbors. Shuffled pairs (28): one or two share both lanes, if work can move.</text>
+<line class="dg-rule" x1="24" y1="372" x2="840" y2="372"/>
+<rect class="dg-n dg-n-focal" x="24" y="383" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="391">Noisy venue and its flooded lanes</text>
+<rect class="dg-n dg-n-input" x="258" y="383" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="280" y="391">Neighbor venue</text>
+<rect class="dg-n dg-n-backend" x="386" y="383" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="408" y="391">Lane assigned to a venue</text>
+</svg></div></div>

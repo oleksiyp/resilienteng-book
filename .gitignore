@@ -1,0 +1,17 @@
+assessment.md
+_site/
+.jekyll-cache/
+.DS_Store
+
+chapters/
+llms-full.txt
+sitemap.xml
+
+cover-lab/node_modules/
+cover-lab/_preview/
+__pycache__/
+
+# working notes stay local
+drafting/
+OUTLINE.md
+sources/

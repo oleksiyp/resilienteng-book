@@ -1,0 +1,85 @@
+<div class="dg-figure" data-fig="fig-1-2" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 376" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-1-2-title fig-1-2-desc">
+<title id="fig-1-2-title">One fan&#x27;s purchase, step by step</title>
+<desc id="fig-1-2-desc">Eight steps in two rows. The fan waits in the Sale Gate&#x27;s room, is admitted at no more than about 1,200 fans a second per event, passes Bot Screening, sees a seat map whose geometry comes from Catalog&#x27;s cache and whose availability comes from Seat Inventory, holds seats for five minutes with POST /holds, completes a checkout saga within a 3-second budget of which about 800 ms is the payment provider, after which SeatSold and TicketIssued are published and Notifications delivers the ticket to the fan&#x27;s wallet.</desc>
+<defs><marker id="fig-1-2-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-2-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-2-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<path class="dg-a dg-a-muted" d="M 204,92 L 236,92" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 416,92 L 448,92" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 628,92 L 660,92" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 824,128 L 824,216" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 660,252 L 628,252" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 448,252 L 416,252" marker-end="url(#fig-1-2-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 236,252 L 204,252" marker-end="url(#fig-1-2-m-muted)"/>
+<rect class="dg-mask" x="24" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="24" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="32" y="62" width="80" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="72" y="71">1 · SALE GATE</text>
+<text class="dg-name" x="114" y="98">Wait in the room</text>
+<text class="dg-sub" x="114" y="113">queue position, in order</text>
+<rect class="dg-mask" x="236" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-focal" x="236" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-focal" x="244" y="62" width="80" height="12" rx="2"/>
+<text class="dg-tag dg-t-focal" x="284" y="71">2 · SALE GATE</text>
+<text class="dg-name" x="326" y="98">Admitted</text>
+<text class="dg-sub" x="326" y="113">≤ ~1,200 fans/s per event</text>
+<rect class="dg-mask" x="448" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="448" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="456" y="62" width="100" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="506" y="71">3 · BOT SCREENING</text>
+<text class="dg-name" x="538" y="98">Screened</text>
+<text class="dg-sub" x="538" y="113">edge signals, velocity rules</text>
+<rect class="dg-mask" x="660" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="660" y="56" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="668" y="62" width="156" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="746" y="71">4 · CATALOG + SEAT INVENTORY</text>
+<text class="dg-name" x="750" y="98">Seat map</text>
+<text class="dg-sub" x="750" y="113">shape cached, seats live</text>
+<rect class="dg-mask" x="660" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="660" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="668" y="222" width="104" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="720" y="231">5 · SEAT INVENTORY</text>
+<text class="dg-name" x="750" y="258">Hold</text>
+<text class="dg-sub" x="750" y="273">POST /holds · 5-min TTL</text>
+<rect class="dg-mask" x="448" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-focal" x="448" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-focal" x="456" y="222" width="120" height="12" rx="2"/>
+<text class="dg-tag dg-t-focal" x="516" y="231">6 · ORDERS &amp; PAYMENTS</text>
+<text class="dg-name" x="538" y="258">Checkout saga</text>
+<text class="dg-sub" x="538" y="273">3 s budget, ~800 ms at PSP</text>
+<rect class="dg-mask" x="236" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="236" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="244" y="222" width="108" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="298" y="231">7 · TICKET-SALES.V2</text>
+<text class="dg-name" x="326" y="258">Facts published</text>
+<text class="dg-sub" x="326" y="273">SeatSold, TicketIssued</text>
+<rect class="dg-mask" x="24" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-n dg-n-backend" x="24" y="216" width="180" height="72" rx="6"/>
+<rect class="dg-tagbox dg-t-backend" x="32" y="222" width="100" height="12" rx="2"/>
+<text class="dg-tag dg-t-backend" x="82" y="231">8 · NOTIFICATIONS</text>
+<text class="dg-name" x="114" y="258">Ticket in the wallet</text>
+<text class="dg-sub" x="114" y="273">email and wallet pass</text>
+<text class="dg-eyebrow" x="24" y="36" style="text-anchor:start">ONE FAN, ON-SALE MORNING · READ ALONG THE ARROWS</text>
+<text class="dg-note" x="28" y="148" text-anchor="start">minutes, sometimes an hour;</text>
+<text class="dg-note" x="28" y="161" text-anchor="start">the room absorbs the 500×</text>
+<text class="dg-note" x="240" y="148" text-anchor="start">the dial that keeps every</text>
+<text class="dg-note" x="240" y="161" text-anchor="start">shard under 80% load</text>
+<text class="dg-note" x="452" y="148" text-anchor="start">the bots arrive first;</text>
+<text class="dg-note" x="452" y="161" text-anchor="start">real fans must pass</text>
+<text class="dg-note" x="664" y="148" text-anchor="start">geometry: Catalog&#x27;s cache</text>
+<text class="dg-note" x="664" y="161" text-anchor="start">availability: Inventory</text>
+<text class="dg-note" x="664" y="308" text-anchor="start">on one of four shards, in</text>
+<text class="dg-note" x="664" y="321" text-anchor="start">the event&#x27;s home region</text>
+<text class="dg-note" x="452" y="308" text-anchor="start">Idempotency-Key on the buy;</text>
+<text class="dg-note" x="452" y="321" text-anchor="start">PSP down: the second PSP</text>
+<text class="dg-note" x="240" y="308" text-anchor="start">SaleCompleted feeds</text>
+<text class="dg-note" x="240" y="321" text-anchor="start">Finance and Analytics</text>
+<text class="dg-note" x="28" y="308" text-anchor="start">one ticket, delivered once:</text>
+<text class="dg-note" x="28" y="321" text-anchor="start">the rewrite&#x27;s lesson</text>
+<line class="dg-rule" x1="24" y1="336" x2="840" y2="336"/>
+<rect class="dg-n dg-n-backend" x="24" y="347" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="355">Step, tagged with the service that owns it</text>
+<rect class="dg-n dg-n-focal" x="309" y="347" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="331" y="355">The two numbers that bound the rush</text>
+<line class="dg-a dg-a-muted" x1="555" y1="352" x2="579" y2="352" marker-end="url(#fig-1-2-m-muted)"/>
+<text class="dg-legend" x="587" y="355">The fan moves on</text>
+</svg></div></div>

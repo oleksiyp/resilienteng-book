@@ -1,0 +1,69 @@
+<div class="dg-figure" data-fig="fig-4-1" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 432" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-4-1-title fig-4-1-desc">
+<title id="fig-4-1-title">Knight Capital&#x27;s eight servers</title>
+<desc id="fig-4-1-desc">Three columns show Knight&#x27;s eight order-router servers. Before 1 August the new code reached seven servers, and the eighth kept the old code with the dormant Power Peg function. At the 09:30 open, seven servers handled the new orders correctly while the eighth woke Power Peg. After engineers rolled the seven back to the old code, all eight ran Power Peg until it was stopped about 45 minutes after the open.</desc>
+<defs><marker id="fig-4-1-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-4-1-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-4-1-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<rect class="dg-zone" x="128" y="48" width="232" height="280" rx="8"/><rect class="dg-mask" x="140" y="42" width="180" height="12" rx="2"/><text class="dg-eyebrow" x="230" y="51">BEFORE THE OPEN · MANUAL DEPLOY</text>
+<rect class="dg-zone" x="368" y="48" width="232" height="280" rx="8"/><rect class="dg-mask" x="380" y="42" width="120" height="12" rx="2"/><text class="dg-eyebrow" x="440" y="51">09:30 · MARKET OPENS</text>
+<rect class="dg-zone" x="608" y="48" width="232" height="280" rx="8"/><rect class="dg-mask" x="620" y="42" width="108" height="12" rx="2"/><text class="dg-eyebrow" x="674" y="51">AFTER THE ROLLBACK</text>
+<rect class="dg-n dg-n-backend" x="136" y="68" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="100" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="132" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="164" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="196" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="228" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="136" y="260" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-optional" x="136" y="292" width="216" height="24" rx="4" stroke-dasharray="4,3"/>
+<rect class="dg-n dg-n-backend" x="376" y="68" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="100" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="132" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="164" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="196" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="228" width="216" height="24" rx="4"/>
+<rect class="dg-n dg-n-backend" x="376" y="260" width="216" height="24" rx="4"/>
+<path class="dg-ill-fill-accent" d="M 380,292 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,68 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,100 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,132 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,164 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,196 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,228 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,260 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z M 620,292 h 208 a 4 4 0 0 1 4 4 v 16 a 4 4 0 0 1 -4 4 h -208 a 4 4 0 0 1 -4 -4 v -16 a 4 4 0 0 1 4 -4 z"/>
+<text class="dg-sub" x="244" y="83">new code</text>
+<text class="dg-sub" x="244" y="115">new code</text>
+<text class="dg-sub" x="244" y="147">new code</text>
+<text class="dg-sub" x="244" y="179">new code</text>
+<text class="dg-sub" x="244" y="211">new code</text>
+<text class="dg-sub" x="244" y="243">new code</text>
+<text class="dg-sub" x="244" y="275">new code</text>
+<text class="dg-sub" x="244" y="307">old code · dormant Power Peg</text>
+<text class="dg-sub" x="484" y="83">new orders handled</text>
+<text class="dg-sub" x="484" y="115">new orders handled</text>
+<text class="dg-sub" x="484" y="147">new orders handled</text>
+<text class="dg-sub" x="484" y="179">new orders handled</text>
+<text class="dg-sub" x="484" y="211">new orders handled</text>
+<text class="dg-sub" x="484" y="243">new orders handled</text>
+<text class="dg-sub" x="484" y="275">new orders handled</text>
+<text class="dg-sub" x="484" y="307">Power Peg: child orders, no stop</text>
+<text class="dg-sub" x="724" y="83">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="115">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="147">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="179">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="211">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="243">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="275">old code · Power Peg</text>
+<text class="dg-sub" x="724" y="307">old code · Power Peg</text>
+<text class="dg-note" x="24" y="83" text-anchor="start">SMARS server 1</text>
+<text class="dg-note" x="24" y="115" text-anchor="start">SMARS server 2</text>
+<text class="dg-note" x="24" y="147" text-anchor="start">SMARS server 3</text>
+<text class="dg-note" x="24" y="179" text-anchor="start">SMARS server 4</text>
+<text class="dg-note" x="24" y="211" text-anchor="start">SMARS server 5</text>
+<text class="dg-note" x="24" y="243" text-anchor="start">SMARS server 6</text>
+<text class="dg-note" x="24" y="275" text-anchor="start">SMARS server 7</text>
+<text class="dg-note" x="24" y="307" text-anchor="start">SMARS server 8</text>
+<text class="dg-note" x="244" y="344" text-anchor="middle">no second check, no comparison</text>
+<text class="dg-note" x="244" y="360" text-anchor="middle">97 Power Peg emails, unread</text>
+<text class="dg-note" x="484" y="344" text-anchor="middle">new orders carry the reused flag</text>
+<text class="dg-note" x="724" y="344" text-anchor="middle">stopped ≈ 45 min after the open</text>
+<text class="dg-note" x="724" y="360" text-anchor="middle">4 million executions · 154 stocks</text>
+<line class="dg-rule" x1="24" y1="392" x2="840" y2="392"/>
+<rect class="dg-n dg-n-backend" x="24" y="403" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="411">New code, as intended</text>
+<rect class="dg-n dg-n-optional" x="191" y="403" width="16" height="10" rx="2" stroke-dasharray="4,3"/>
+<text class="dg-legend" x="213" y="411">Old code, Power Peg dormant</text>
+<rect class="dg-n dg-n-focal" x="392" y="403" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="414" y="411">Power Peg running</text>
+</svg></div></div>

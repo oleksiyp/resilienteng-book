@@ -1,0 +1,50 @@
+<div class="dg-figure" data-fig="fig-6-2" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-6-2-title fig-6-2-desc">
+<title id="fig-6-2-title">RPO and RTO around a failure, promised and measured</title>
+<desc id="fig-6-2-desc">A time axis in hours around a failure at zero. The seat ledger promises an RPO of zero and an RTO of minutes. The Finance ledger promises 15 minutes of data loss and two hours to restore; its spring drill took about nine hours, and the second drill had the current year writable in 1 h 50 min, with history following within a day.</desc>
+<defs><marker id="fig-6-2-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-2-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-2-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-axis" x1="200" y1="264" x2="840" y2="264"/>
+<line class="dg-axis" x1="200" y1="264" x2="200" y2="56"/>
+<line class="dg-axis" x1="200.0" y1="264" x2="200.0" y2="268"/>
+<text class="dg-tick" x="200.0" y="280" text-anchor="middle">-1 H</text>
+<line class="dg-axis" x1="258.2" y1="264" x2="258.2" y2="268"/>
+<text class="dg-tick" x="258.2" y="280" text-anchor="middle">FAILURE</text>
+<line class="dg-axis" x1="374.5" y1="264" x2="374.5" y2="268"/>
+<text class="dg-tick" x="374.5" y="280" text-anchor="middle">+2 H</text>
+<line class="dg-axis" x1="490.9" y1="264" x2="490.9" y2="268"/>
+<text class="dg-tick" x="490.9" y="280" text-anchor="middle">+4 H</text>
+<line class="dg-axis" x1="607.3" y1="264" x2="607.3" y2="268"/>
+<text class="dg-tick" x="607.3" y="280" text-anchor="middle">+6 H</text>
+<line class="dg-axis" x1="723.6" y1="264" x2="723.6" y2="268"/>
+<text class="dg-tick" x="723.6" y="280" text-anchor="middle">+8 H</text>
+<line class="dg-axis" x1="840.0" y1="264" x2="840.0" y2="268"/>
+<text class="dg-tick" x="840.0" y="280" text-anchor="middle">+10 H</text>
+<text class="dg-axis-label" x="840" y="296" text-anchor="end">HOURS FROM THE FAILURE</text>
+<rect class="dg-mask" x="320.545" y="32" width="108" height="12" rx="2"/><text class="dg-label" x="374.545" y="41">PROMISED RTO · 2 H</text>
+<rect class="dg-mask" x="142.182" y="14" width="232" height="12" rx="2"/><text class="dg-label" x="258.182" y="23">LAST GOOD COPY ← RPO · RTO → SERVICE BACK</text>
+<line class="dg-series dg-s-ink" x1="258.2" y1="56" x2="258.2" y2="264"/>
+<line class="dg-series dg-s-soft" x1="374.5" y1="56" x2="374.5" y2="264" stroke-dasharray="5 4"/>
+<rect class="dg-n dg-n-backend" x="258.2" y="72" width="3.9" height="24" rx="3"/>
+<rect class="dg-n dg-n-store" x="243.6" y="124" width="14.5" height="24" rx="3"/>
+<rect class="dg-n dg-n-backend" x="258.2" y="124" width="116.4" height="24" rx="3"/>
+<rect class="dg-n dg-n-focal" x="258.2" y="176" width="523.6" height="24" rx="3"/>
+<rect class="dg-n dg-n-backend" x="258.2" y="228" width="106.7" height="24" rx="3"/>
+<rect class="dg-n dg-n-optional" x="364.8" y="228" width="475.2" height="24" rx="3" stroke-dasharray="4,3"/>
+<text class="dg-name" x="104" y="82">Seat ledger</text><text class="dg-sub" x="104" y="95">promised</text>
+<text class="dg-name" x="104" y="134">Finance ledger</text><text class="dg-sub" x="104" y="147">promised</text>
+<text class="dg-name" x="104" y="186">Finance, drill 1</text><text class="dg-sub" x="104" y="199">spring · 4.2 TB</text>
+<text class="dg-name" x="104" y="238">Finance, drill 2</text><text class="dg-sub" x="104" y="251">current year first</text>
+<text class="dg-note" x="386" y="88" text-anchor="start">RPO 0 (majority commit) · RTO minutes</text>
+<text class="dg-note" x="386" y="140" text-anchor="start">RPO 15 min · RTO 2 h</text>
+<text class="dg-note" x="773" y="192" text-anchor="end">~9 h: approvals, I/O, verification</text>
+<text class="dg-note" x="386" y="244" text-anchor="start">1 h 50 min · history follows, within a day →</text>
+<line class="dg-rule" x1="24" y1="320" x2="840" y2="320"/>
+<rect class="dg-n dg-n-store" x="24" y="331" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="339">RPO: data lost</text>
+<rect class="dg-n dg-n-backend" x="152" y="331" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="174" y="339">RTO: time to restore</text>
+<rect class="dg-n dg-n-focal" x="314" y="331" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="336" y="339">Missed the promise</text>
+<rect class="dg-n dg-n-optional" x="464" y="331" width="16" height="10" rx="2" stroke-dasharray="4,3"/>
+<text class="dg-legend" x="486" y="339">Restored later, by agreement</text>
+</svg></div></div>

@@ -1,0 +1,113 @@
+<div class="dg-figure" data-fig="fig-1-3" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 664" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-1-3-title fig-1-3-desc">
+<title id="fig-1-3-title">Where Encore runs</title>
+<desc id="fig-1-3-desc">Two EU regions, EU-1 and EU-2, each with a core Kubernetes cluster, six Professional tenant cells with a database per tenant, a serverless Sale Gate edge and serverless self-service cells of about 50 venues. Fans and partners read from either region. Each event&#x27;s writes are pinned to a home region, where its seat-ledger leader commits each write once three of five replicas hold it: two in the home region, two in the other region and a witness in a third region, EU-3, which stores the log but serves no traffic. Both regions reconcile toward the encore-deploy Git repository.</desc>
+<defs><marker id="fig-1-3-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-3-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-3-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<rect class="dg-zone" x="24" y="120" width="392" height="288" rx="8"/><rect class="dg-mask" x="36" y="114" width="80" height="12" rx="2"/><text class="dg-eyebrow" x="76" y="123">EU-1 · REGION</text>
+<rect class="dg-zone" x="36" y="228" width="368" height="60" rx="8"/><rect class="dg-mask" x="48" y="222" width="260" height="12" rx="2"/><text class="dg-eyebrow" x="178" y="231">SIX PROFESSIONAL CELLS · A DATABASE PER TENANT</text>
+<rect class="dg-zone" x="448" y="120" width="392" height="288" rx="8"/><rect class="dg-mask" x="460" y="114" width="80" height="12" rx="2"/><text class="dg-eyebrow" x="500" y="123">EU-2 · REGION</text>
+<rect class="dg-zone" x="460" y="228" width="368" height="60" rx="8"/><rect class="dg-mask" x="472" y="222" width="260" height="12" rx="2"/><text class="dg-eyebrow" x="602" y="231">SIX PROFESSIONAL CELLS · A DATABASE PER TENANT</text>
+<rect class="dg-zone" x="320" y="440" width="224" height="88" rx="8"/><rect class="dg-mask" x="332" y="434" width="88" height="12" rx="2"/><text class="dg-eyebrow" x="376" y="443">EU-3 · WITNESS</text>
+<path class="dg-a dg-a-muted" d="M 392,72 L 392,88 Q 392,96 384,96 L 320,96 Q 312,96 312,104 L 312,148" marker-end="url(#fig-1-3-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 472,72 L 472,88 Q 472,96 480,96 L 544,96 Q 552,96 552,104 L 552,148" marker-end="url(#fig-1-3-m-muted)"/>
+<path class="dg-a dg-a-accent" d="M 312,360 L 312,372 Q 312,380 320,380 L 544,380 Q 552,380 552,372 L 552,360" marker-end="url(#fig-1-3-m-accent)"/>
+<path class="dg-a dg-a-accent" d="M 432,380 L 432,460" marker-end="url(#fig-1-3-m-accent)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 348,584 L 228,584 Q 220,584 220,576 L 220,408" marker-end="url(#fig-1-3-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 516,584 L 636,584 Q 644,584 644,576 L 644,408" marker-end="url(#fig-1-3-m-muted)"/>
+<rect class="dg-mask" x="440" y="414" width="136" height="12" rx="2"/><text class="dg-label dg-l-accent" x="508" y="423">MAJORITY COMMIT · RPO 0</text>
+<rect class="dg-mask" x="254" y="592" width="60" height="12" rx="2"/><text class="dg-label" x="284" y="601">RECONCILE</text>
+<rect class="dg-mask" x="550" y="592" width="60" height="12" rx="2"/><text class="dg-label" x="580" y="601">RECONCILE</text>
+<rect class="dg-mask" x="44" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="44" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="70" y="262">P1</text>
+<rect class="dg-mask" x="104" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="104" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="130" y="262">P2</text>
+<rect class="dg-mask" x="164" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="164" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="190" y="262">P3</text>
+<rect class="dg-mask" x="224" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="224" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="250" y="262">P4</text>
+<rect class="dg-mask" x="284" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="284" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="310" y="262">P5</text>
+<rect class="dg-mask" x="344" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="344" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="370" y="262">P6</text>
+<rect class="dg-mask" x="40" y="148" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="40" y="148" width="176" height="56" rx="6"/>
+<text class="dg-name" x="128" y="178">Core cluster</text>
+<text class="dg-sub" x="128" y="193">Kubernetes, the services</text>
+<rect class="dg-mask" x="224" y="148" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="224" y="148" width="176" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="312" y="178">Sale Gate edge</text>
+<text class="dg-sub" x="312" y="193">serverless, pre-warmed</text>
+<rect class="dg-mask" x="40" y="304" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="40" y="304" width="176" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="128" y="334">Self-service cells</text>
+<text class="dg-sub" x="128" y="349">serverless, ~50 venues</text>
+<rect class="dg-mask" x="224" y="304" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-store" x="224" y="304" width="176" height="56" rx="6"/>
+<text class="dg-name" x="312" y="334">Seat ledger leader</text>
+<text class="dg-sub" x="312" y="349">event A&#x27;s writes land here</text>
+<rect class="dg-mask" x="468" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="468" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="494" y="262">P7</text>
+<rect class="dg-mask" x="528" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="528" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="554" y="262">P8</text>
+<rect class="dg-mask" x="588" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="588" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="614" y="262">P9</text>
+<rect class="dg-mask" x="648" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="648" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="674" y="262">P10</text>
+<rect class="dg-mask" x="708" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="708" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="734" y="262">P11</text>
+<rect class="dg-mask" x="768" y="240" width="52" height="36" rx="6"/>
+<rect class="dg-n dg-n-backend" x="768" y="240" width="52" height="36" rx="6"/>
+<text class="dg-name" x="794" y="262">P12</text>
+<rect class="dg-mask" x="648" y="148" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="648" y="148" width="176" height="56" rx="6"/>
+<text class="dg-name" x="736" y="178">Core cluster</text>
+<text class="dg-sub" x="736" y="193">Kubernetes, the services</text>
+<rect class="dg-mask" x="464" y="148" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="464" y="148" width="176" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="552" y="178">Sale Gate edge</text>
+<text class="dg-sub" x="552" y="193">serverless, pre-warmed</text>
+<rect class="dg-mask" x="648" y="304" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="648" y="304" width="176" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="736" y="334">Self-service cells</text>
+<text class="dg-sub" x="736" y="349">serverless, ~50 venues</text>
+<rect class="dg-mask" x="464" y="304" width="176" height="56" rx="6"/>
+<rect class="dg-n dg-n-store" x="464" y="304" width="176" height="56" rx="6"/>
+<text class="dg-name" x="552" y="334">Seat ledger replica</text>
+<text class="dg-sub" x="552" y="349">event A, votes, can lead</text>
+<rect class="dg-mask" x="344" y="460" width="176" height="52" rx="6"/>
+<rect class="dg-n dg-n-store" x="344" y="460" width="176" height="52" rx="6"/>
+<text class="dg-name" x="432" y="488">Seat ledger witness</text>
+<text class="dg-sub" x="432" y="503">stores the log, no traffic</text>
+<rect class="dg-mask" x="348" y="24" width="168" height="48" rx="6"/>
+<rect class="dg-n dg-n-input" x="348" y="24" width="168" height="48" rx="6"/>
+<text class="dg-name" x="432" y="50">Fans and partners</text>
+<text class="dg-sub" x="432" y="65">public API, apps</text>
+<rect class="dg-mask" x="348" y="560" width="168" height="48" rx="6"/>
+<rect class="dg-n dg-n-store" x="348" y="560" width="168" height="48" rx="6"/>
+<text class="dg-name" x="432" y="586">encore-deploy</text>
+<text class="dg-sub" x="432" y="601">Git: desired state</text>
+<text class="dg-note" x="528" y="44" text-anchor="start">reads: either region</text>
+<text class="dg-note" x="528" y="57" text-anchor="start">writes: the event&#x27;s home region</text>
+<line class="dg-rule" x1="24" y1="624" x2="840" y2="624"/>
+<rect class="dg-n dg-n-backend" x="24" y="635" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="643">Kubernetes cluster</text>
+<rect class="dg-n dg-n-optional" x="174" y="635" width="16" height="10" rx="2" stroke-dasharray="4,3"/>
+<text class="dg-legend" x="196" y="643">Serverless</text>
+<rect class="dg-n dg-n-store" x="280" y="635" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="302" y="643">Ledger or repository</text>
+<line class="dg-a dg-a-accent" x1="442" y1="640" x2="466" y2="640" marker-end="url(#fig-1-3-m-accent)"/>
+<text class="dg-legend" x="474" y="643">Replication; any two of three commit</text>
+<line class="dg-a dg-a-muted dg-dash" x1="703" y1="640" x2="727" y2="640" marker-end="url(#fig-1-3-m-muted)"/>
+<text class="dg-legend" x="735" y="643">GitOps pull</text>
+</svg></div></div>

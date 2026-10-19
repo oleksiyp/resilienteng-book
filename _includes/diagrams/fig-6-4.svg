@@ -1,0 +1,47 @@
+<div class="dg-figure" data-fig="fig-6-4" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 432" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-6-4-title fig-6-4-desc">
+<title id="fig-6-4-title">Fencing a deposed leader</title>
+<desc id="fig-6-4-desc">The old leader of a Seat Inventory shard writes with term 7 and is accepted. It is then paused or cut off. The new leader records term 8 at the storage and writes with it. When the old leader wakes and writes with term 7, the storage rejects the write as stale, and the old leader learns only then that it was replaced.</desc>
+<defs><marker id="fig-6-4-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-4-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-4-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-lifeline" x1="120" y1="76" x2="120" y2="372"/>
+<line class="dg-lifeline" x1="432" y1="76" x2="432" y2="372"/>
+<line class="dg-lifeline" x1="744" y1="76" x2="744" y2="372"/>
+<path class="dg-a dg-a-muted" d="M 124,120 L 428,120" marker-end="url(#fig-6-4-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 740,200 L 436,200" marker-end="url(#fig-6-4-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 740,248 L 436,248" marker-end="url(#fig-6-4-m-muted)"/>
+<path class="dg-a dg-a-accent" d="M 124,296 L 428,296" marker-end="url(#fig-6-4-m-accent)"/>
+<path class="dg-a dg-a-accent dg-dash" d="M 428,336 L 124,336" marker-end="url(#fig-6-4-m-accent)"/>
+<rect class="dg-mask" x="206" y="100" width="140" height="12" rx="2"/><text class="dg-label" x="276" y="109">WRITE HOLD · TERM 7 · OK</text>
+<rect class="dg-mask" x="548" y="180" width="80" height="12" rx="2"/><text class="dg-label" x="588" y="189">RECORD TERM 8</text>
+<rect class="dg-mask" x="518" y="228" width="140" height="12" rx="2"/><text class="dg-label" x="588" y="237">WRITE HOLD · TERM 8 · OK</text>
+<rect class="dg-mask" x="220" y="276" width="112" height="12" rx="2"/><text class="dg-label dg-l-accent" x="276" y="285">WRITE HOLD · TERM 7</text>
+<rect class="dg-mask" x="214" y="316" width="124" height="12" rx="2"/><text class="dg-label dg-l-accent" x="276" y="325">REJECTED · STALE TERM</text>
+<rect class="dg-mask" x="36" y="24" width="168" height="52" rx="6"/>
+<rect class="dg-n dg-n-backend" x="36" y="24" width="168" height="52" rx="6"/>
+<text class="dg-name" x="120" y="52">Old leader</text>
+<text class="dg-sub" x="120" y="67">holds term 7</text>
+<rect class="dg-mask" x="348" y="24" width="168" height="52" rx="6"/>
+<rect class="dg-n dg-n-store" x="348" y="24" width="168" height="52" rx="6"/>
+<text class="dg-name" x="432" y="52">Shard storage</text>
+<text class="dg-sub" x="432" y="67">newest term seen</text>
+<rect class="dg-mask" x="660" y="24" width="168" height="52" rx="6"/>
+<rect class="dg-n dg-n-backend" x="660" y="24" width="168" height="52" rx="6"/>
+<text class="dg-name" x="744" y="52">New leader</text>
+<text class="dg-sub" x="744" y="67">elected, term 8</text>
+<rect class="dg-mask" x="56" y="148" width="128" height="120" rx="8"/>
+<rect class="dg-n dg-n-optional" x="56" y="148" width="128" height="120" rx="8"/>
+<text class="dg-name" x="120" y="206">Paused</text>
+<text class="dg-sub" x="120" y="220">GC or partition</text>
+<rect class="dg-activation" x="428" y="104" width="8" height="252"/>
+<text class="dg-note" x="444" y="222" text-anchor="start">newest term: 8</text>
+<text class="dg-note" x="132" y="360" text-anchor="start">it learns of its replacement only here</text>
+<line class="dg-rule" x1="24" y1="392" x2="840" y2="392"/>
+<rect class="dg-n dg-n-backend" x="24" y="403" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="411">Leader</text>
+<rect class="dg-n dg-n-store" x="107" y="403" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="129" y="411">Storage that enforces terms</text>
+<line class="dg-a dg-a-muted" x1="308" y1="408" x2="332" y2="408" marker-end="url(#fig-6-4-m-muted)"/>
+<text class="dg-legend" x="340" y="411">Accepted</text>
+<line class="dg-a dg-a-accent" x1="412" y1="408" x2="436" y2="408" marker-end="url(#fig-6-4-m-accent)"/>
+<text class="dg-legend" x="444" y="411">Stale write, rejected</text>
+</svg></div></div>

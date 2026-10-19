@@ -1,0 +1,74 @@
+<div class="dg-figure" data-fig="fig-6-6" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-6-6-title fig-6-6-desc">
+<title id="fig-6-6-title">The region failover game day</title>
+<desc id="fig-6-6-desc">EU-1 is isolated from EU-2 and from the witness in EU-3, and every event homed there fails over to EU-2. The core held: the EU-1 seat-ledger leaders lost their majority and stopped writing, leaders were re-elected in EU-2 with the EU-3 witness&#x27;s votes, fencing rejected late writes from the deposed leaders, and the failover took about four minutes end to end. Three edges did not: the Sale Gate was pre-warmed only in EU-1, Bot Screening&#x27;s risk data reached EU-2 only by a daily copy, and an Orders reconciliation job whose schedule named EU-1 sat idle for six hours.</desc>
+<defs><marker id="fig-6-6-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-6-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-6-6-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<rect class="dg-zone" x="16" y="112" width="248" height="376" rx="8"/><rect class="dg-mask" x="28" y="106" width="92" height="12" rx="2"/><text class="dg-eyebrow" x="74" y="115">EU-1 · ISOLATED</text>
+<rect class="dg-zone" x="600" y="112" width="248" height="376" rx="8"/><rect class="dg-mask" x="612" y="106" width="104" height="12" rx="2"/><text class="dg-eyebrow" x="664" y="115">EU-2 · TAKES OVER</text>
+<rect class="dg-zone" x="312" y="504" width="240" height="88" rx="8"/><rect class="dg-mask" x="324" y="498" width="88" height="12" rx="2"/><text class="dg-eyebrow" x="368" y="507">EU-3 · WITNESS</text>
+<path class="dg-a dg-a-muted dg-dash" d="M 392,88 L 392,156 Q 392,164 384,164 L 240,164" marker-end="url(#fig-6-6-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 472,88 L 472,156 Q 472,164 480,164 L 624,164" marker-end="url(#fig-6-6-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 240,240 L 624,240" marker-end="url(#fig-6-6-m-muted)"/>
+<path class="dg-a dg-a-accent dg-dash" d="M 240,264 L 624,264" marker-end="url(#fig-6-6-m-accent)"/>
+<path class="dg-a dg-a-muted" d="M 552,548 L 576,548 Q 584,548 584,540 L 584,304 Q 584,296 592,296 L 672,296 Q 680,296 680,288 L 680,280" marker-end="url(#fig-6-6-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 240,340 L 624,340" marker-end="url(#fig-6-6-m-muted)"/>
+<rect class="dg-mask" x="294" y="144" width="44" height="12" rx="2"/><text class="dg-label" x="316" y="153">BEFORE</text>
+<rect class="dg-mask" x="528" y="144" width="40" height="12" rx="2"/><text class="dg-label" x="548" y="153">AFTER</text>
+<rect class="dg-mask" x="368" y="220" width="128" height="12" rx="2"/><text class="dg-label" x="432" y="229">REPLICATION · LINK CUT</text>
+<rect class="dg-mask" x="346" y="272" width="172" height="12" rx="2"/><text class="dg-label dg-l-accent" x="432" y="281">LATE WRITES · FENCED, REJECTED</text>
+<rect class="dg-mask" x="536" y="416" width="40" height="12" rx="2"/><text class="dg-label" x="556" y="425">VOTES</text>
+<rect class="dg-mask" x="386" y="320" width="92" height="12" rx="2"/><text class="dg-label" x="432" y="329">DAILY COPY ONLY</text>
+<rect class="dg-mask" x="332" y="32" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-input" x="332" y="32" width="200" height="56" rx="6"/>
+<text class="dg-name" x="432" y="62">Fans + synthetic buyers</text>
+<text class="dg-sub" x="432" y="77">small events · test event</text>
+<rect class="dg-mask" x="40" y="136" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="40" y="136" width="200" height="56" rx="6"/>
+<text class="dg-name" x="140" y="166">Sale Gate</text>
+<text class="dg-sub" x="140" y="181">pre-warmed here</text>
+<rect class="dg-mask" x="40" y="224" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="40" y="224" width="200" height="56" rx="6"/>
+<text class="dg-name" x="140" y="254">Seat Inventory</text>
+<text class="dg-sub" x="140" y="269">leaders lose majority</text>
+<rect class="dg-mask" x="40" y="312" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-store" x="40" y="312" width="200" height="56" rx="6"/>
+<text class="dg-name" x="140" y="342">Risk data</text>
+<text class="dg-sub" x="140" y="357">Bot Screening account</text>
+<rect class="dg-mask" x="40" y="400" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="40" y="400" width="200" height="56" rx="6"/>
+<text class="dg-name" x="140" y="430">Orders reconciliation</text>
+<text class="dg-sub" x="140" y="445">schedule names EU-1</text>
+<rect class="dg-mask" x="624" y="136" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="624" y="136" width="200" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="724" y="166">Sale Gate</text>
+<text class="dg-sub" x="724" y="181">cold starts</text>
+<rect class="dg-mask" x="624" y="224" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="624" y="224" width="200" height="56" rx="6"/>
+<text class="dg-name" x="724" y="254">Seat Inventory</text>
+<text class="dg-sub" x="724" y="269">re-elected · ~4 min end to end</text>
+<rect class="dg-mask" x="624" y="312" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="624" y="312" width="200" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="724" y="342">Risk data</text>
+<text class="dg-sub" x="724" y="357">yesterday&#x27;s signals</text>
+<rect class="dg-mask" x="624" y="400" width="200" height="56" rx="6"/>
+<rect class="dg-n dg-n-optional" x="624" y="400" width="200" height="56" rx="6" stroke-dasharray="4,3"/>
+<text class="dg-name" x="724" y="430">Orders reconciliation</text>
+<text class="dg-sub" x="724" y="445">idle for 6 h</text>
+<rect class="dg-mask" x="336" y="520" width="192" height="56" rx="6"/>
+<rect class="dg-n dg-n-store" x="336" y="520" width="192" height="56" rx="6"/>
+<text class="dg-name" x="432" y="550">Seat ledger witness</text>
+<text class="dg-sub" x="432" y="565">holds the log, votes</text>
+<text class="dg-note" x="424" y="424" text-anchor="middle">no hold or sale lost; each finding</text>
+<text class="dg-note" x="424" y="438" text-anchor="middle">became a ticket with an owner</text>
+<line class="dg-rule" x1="24" y1="600" x2="840" y2="600"/>
+<rect class="dg-n dg-n-backend" x="24" y="611" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="619">Held</text>
+<rect class="dg-n dg-n-optional" x="96" y="611" width="16" height="10" rx="2" stroke-dasharray="4,3"/>
+<text class="dg-legend" x="118" y="619">Found at the edges</text>
+<line class="dg-a dg-a-muted" x1="246" y1="616" x2="270" y2="616" marker-end="url(#fig-6-6-m-muted)"/>
+<text class="dg-legend" x="278" y="619">Traffic, votes</text>
+<line class="dg-a dg-a-muted dg-dash" x1="384" y1="616" x2="408" y2="616" marker-end="url(#fig-6-6-m-muted)"/>
+<text class="dg-legend" x="416" y="619">Before, cut or copied daily</text>
+<line class="dg-a dg-a-accent dg-dash" x1="595" y1="616" x2="619" y2="616" marker-end="url(#fig-6-6-m-accent)"/>
+<text class="dg-legend" x="627" y="619">Fenced write</text>
+</svg></div></div>

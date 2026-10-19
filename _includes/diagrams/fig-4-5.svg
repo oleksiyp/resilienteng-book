@@ -1,0 +1,29 @@
+<div class="dg-figure" data-fig="fig-4-5" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 436" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-4-5-title fig-4-5-desc">
+<title id="fig-4-5-title">Encore&#x27;s delivery rings</title>
+<desc id="fig-4-5-desc">Four concentric rings: staff and synthetic buyers at the centre, then the pooled self-service cells, then the Professional cells, then Encore&#x27;s own fan site and the Enterprise silo for venue-chain-a, which its contract places last. A change widens outward one ring at a time.</desc>
+<defs><marker id="fig-4-5-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-4-5-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-4-5-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<path class="dg-ill-fill" d="M 142,344 A 290,290 0 0 1 722,344 Z"/>
+<path class="dg-ill-fill" d="M 212,344 A 220,220 0 0 1 652,344 Z"/>
+<path class="dg-ill-fill" d="M 282,344 A 150,150 0 0 1 582,344 Z"/>
+<path class="dg-ill-fill-accent" d="M 352,344 A 80,80 0 0 1 512,344 Z"/>
+<line class="dg-ill-ink" x1="120" y1="344" x2="744" y2="344"/>
+<path class="dg-a dg-a-muted" d="M 520,368 L 720,368" marker-end="url(#fig-4-5-m-muted)"/>
+<rect class="dg-mask" x="536" y="376" width="168" height="12" rx="2"/><text class="dg-label" x="620" y="385">EXPOSURE WIDENS, RING BY RING</text>
+<text class="dg-name" x="432" y="314">Staff</text>
+<text class="dg-sub" x="432" y="328">and synthetic buyers</text>
+<text class="dg-name" x="432" y="238">Self-service cells</text>
+<text class="dg-sub" x="432" y="252">~500 venues, cells of ~50</text>
+<text class="dg-name" x="432" y="168">Professional cells</text>
+<text class="dg-sub" x="432" y="182">Kubernetes, database per tenant</text>
+<text class="dg-name" x="432" y="98">Fan site &amp; venue-chain-a</text>
+<text class="dg-sub" x="432" y="112">Enterprise silo: last, by contract</text>
+<text class="dg-note" x="132" y="380" text-anchor="start">each ring waits for the evidence of the last</text>
+<line class="dg-rule" x1="24" y1="396" x2="840" y2="396"/>
+<rect class="dg-n dg-n-focal" x="24" y="407" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="415">First ring: those who chose to be early</text>
+<rect class="dg-n dg-n-backend" x="292" y="407" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="314" y="415">Later rings</text>
+<line class="dg-a dg-a-muted" x1="403" y1="412" x2="427" y2="412" marker-end="url(#fig-4-5-m-muted)"/>
+<text class="dg-legend" x="435" y="415">Order of exposure</text>
+</svg></div></div>

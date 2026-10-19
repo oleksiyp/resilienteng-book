@@ -1,0 +1,74 @@
+<div class="dg-figure" data-fig="fig-8-3" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-8-3-title fig-8-3-desc">
+<title id="fig-8-3-title">The golden set catches a moved alias</title>
+<desc id="fig-8-3-desc">Nightly golden-set pass rates over nine days. Refund cases pass 18 of 18 every night until the Wednesday run, after the provider moved the cheap tier&#x27;s alias on Tuesday, when they pass 11 of 18; the overall score dips only from 193 to 186 of 200. The previous snapshot is pinned by Wednesday lunchtime, about 30 hours after the move, and Thursday&#x27;s run is back to 18 of 18.</desc>
+<defs><marker id="fig-8-3-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-8-3-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-8-3-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-grid" x1="72" y1="264.0" x2="816" y2="264.0"/>
+<line class="dg-grid" x1="72" y1="234.0" x2="816" y2="234.0"/>
+<line class="dg-grid" x1="72" y1="204.0" x2="816" y2="204.0"/>
+<line class="dg-grid" x1="72" y1="174.0" x2="816" y2="174.0"/>
+<line class="dg-grid" x1="72" y1="144.0" x2="816" y2="144.0"/>
+<line class="dg-grid" x1="72" y1="114.0" x2="816" y2="114.0"/>
+<line class="dg-grid" x1="72" y1="84.0" x2="816" y2="84.0"/>
+<line class="dg-axis" x1="72" y1="264" x2="816" y2="264"/>
+<line class="dg-axis" x1="72" y1="264" x2="72" y2="48"/>
+<line class="dg-axis" x1="72.0" y1="264" x2="72.0" y2="268"/>
+<text class="dg-tick" x="72.0" y="280" text-anchor="middle">THU</text>
+<line class="dg-axis" x1="158.5" y1="264" x2="158.5" y2="268"/>
+<text class="dg-tick" x="158.5" y="280" text-anchor="middle">FRI</text>
+<line class="dg-axis" x1="245.0" y1="264" x2="245.0" y2="268"/>
+<text class="dg-tick" x="245.0" y="280" text-anchor="middle">SAT</text>
+<line class="dg-axis" x1="331.5" y1="264" x2="331.5" y2="268"/>
+<text class="dg-tick" x="331.5" y="280" text-anchor="middle">SUN</text>
+<line class="dg-axis" x1="418.0" y1="264" x2="418.0" y2="268"/>
+<text class="dg-tick" x="418.0" y="280" text-anchor="middle">MON</text>
+<line class="dg-axis" x1="504.6" y1="264" x2="504.6" y2="268"/>
+<text class="dg-tick" x="504.6" y="280" text-anchor="middle">TUE</text>
+<line class="dg-axis" x1="591.1" y1="264" x2="591.1" y2="268"/>
+<text class="dg-tick" x="591.1" y="280" text-anchor="middle">WED</text>
+<line class="dg-axis" x1="677.6" y1="264" x2="677.6" y2="268"/>
+<text class="dg-tick" x="677.6" y="280" text-anchor="middle">THU</text>
+<line class="dg-axis" x1="764.1" y1="264" x2="764.1" y2="268"/>
+<text class="dg-tick" x="764.1" y="280" text-anchor="middle">FRI</text>
+<text class="dg-tick" x="64" y="267.0" text-anchor="end">40%</text>
+<text class="dg-tick" x="64" y="237.0" text-anchor="end">50%</text>
+<text class="dg-tick" x="64" y="207.0" text-anchor="end">60%</text>
+<text class="dg-tick" x="64" y="177.0" text-anchor="end">70%</text>
+<text class="dg-tick" x="64" y="147.0" text-anchor="end">80%</text>
+<text class="dg-tick" x="64" y="117.0" text-anchor="end">90%</text>
+<text class="dg-tick" x="64" y="87.0" text-anchor="end">100%</text>
+<text class="dg-axis-label" x="816" y="296" text-anchor="end">ONE WEEK AND A BIT</text>
+<text class="dg-axis-label" x="72" y="38" text-anchor="start">GOLDEN-SET PASS RATE, NIGHTLY RUN AT 02:00</text>
+<rect class="dg-area dg-ar-accent" x="526.2" y="48" width="108.1" height="216"/>
+<rect class="dg-mask" x="512.256" y="70" width="136" height="12" rx="2"/><text class="dg-label dg-l-accent" x="580.256" y="79">30 H ON THE MOVED ALIAS</text>
+<rect class="dg-mask" x="608.3" y="195.7" width="120" height="12" rx="2"/><text class="dg-label" x="668.3" y="204.7">REFUND CASES 11 / 18</text>
+<rect class="dg-mask" x="359.9" y="111.0" width="136" height="12" rx="2"/><text class="dg-label" x="427.9" y="120.0">OVERALL 193 → 186 / 200</text>
+<rect class="dg-mask" x="683.3" y="67.0" width="88" height="12" rx="2"/><text class="dg-label" x="727.3" y="76.0">REFUND 18 / 18</text>
+<rect class="dg-mask" x="640.3" y="219.0" width="72" height="12" rx="2"/><text class="dg-label" x="676.3" y="228.0">PINNED BACK</text>
+<polyline class="dg-series dg-s-ink" points="79.2,94.5 165.7,94.5 252.2,94.5 338.7,94.5 425.3,94.5 511.8,94.5 598.3,105.0 684.8,94.5 771.3,94.5"/>
+<polyline class="dg-series dg-s-accent" points="79.2,84.0 165.7,84.0 252.2,84.0 338.7,84.0 425.3,84.0 511.8,84.0 598.3,200.7 684.8,84.0 771.3,84.0"/>
+<circle class="dg-dot dg-dot-ink" cx="79.2" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="165.7" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="252.2" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="338.7" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="425.3" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="511.8" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="598.3" cy="105.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="684.8" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="771.3" cy="94.5" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="79.2" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="165.7" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="252.2" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="338.7" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="425.3" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="511.8" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="598.3" cy="200.7" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="684.8" cy="84.0" r="3"/>
+<circle class="dg-dot dg-dot-ink" cx="771.3" cy="84.0" r="3"/>
+<line class="dg-series dg-s-soft" x1="634.3" y1="48" x2="634.3" y2="264" stroke-dasharray="5 4"/>
+<line class="dg-rule" x1="24" y1="320" x2="840" y2="320"/>
+<line class="dg-a dg-a-accent" x1="24" y1="336" x2="48" y2="336" marker-end="url(#fig-8-3-m-accent)"/>
+<text class="dg-legend" x="56" y="339">Refund cases (18)</text>
+<line class="dg-a dg-a-muted" x1="179" y1="336" x2="203" y2="336" marker-end="url(#fig-8-3-m-muted)"/>
+<text class="dg-legend" x="211" y="339">All cases (200)</text>
+</svg></div></div>

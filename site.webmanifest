@@ -1,0 +1,15 @@
+{
+  "name": "Building Resilient Systems in the AI & Cloud Era",
+  "short_name": "Resilience Book",
+  "description": "A free online book on production engineering: SLOs, capacity, cloud runtimes, delivery, designing for failure, data and disaster recovery, security operations and AI workloads.",
+  "start_url": "/resilienteng-book/",
+  "scope": "/resilienteng-book/",
+  "display": "standalone",
+  "background_color": "#f3f1ec",
+  "theme_color": "#f3f1ec",
+  "icons": [
+    { "src": "/resilienteng-book/assets/icons/icon-192.png?v=3", "sizes": "192x192", "type": "image/png" },
+    { "src": "/resilienteng-book/assets/icons/icon-512.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/resilienteng-book/assets/icons/icon-512-maskable.png?v=3", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

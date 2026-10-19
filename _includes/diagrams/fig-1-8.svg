@@ -1,0 +1,53 @@
+<div class="dg-figure" data-fig="fig-1-8" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 328" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-1-8-title fig-1-8-desc">
+<title id="fig-1-8-title">Serial dependencies multiply</title>
+<desc id="fig-1-8-desc">The availability of a journey with one to six hard dependencies in series, if their failures are independent: at 99.95% each, two already reach the 99.9% checkout objective and four give about 99.80%; at 99.99% each, three give about 99.97%, leaving room inside the objective.</desc>
+<defs><marker id="fig-1-8-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-8-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-8-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-grid" x1="72" y1="280.0" x2="816" y2="280.0"/>
+<line class="dg-grid" x1="72" y1="220.0" x2="816" y2="220.0"/>
+<line class="dg-grid" x1="72" y1="160.0" x2="816" y2="160.0"/>
+<line class="dg-grid" x1="72" y1="100.0" x2="816" y2="100.0"/>
+<line class="dg-grid" x1="72" y1="40.0" x2="816" y2="40.0"/>
+<line class="dg-axis" x1="72" y1="280" x2="816" y2="280"/>
+<line class="dg-axis" x1="72" y1="280" x2="72" y2="40"/>
+<line class="dg-axis" x1="134.0" y1="280" x2="134.0" y2="284"/>
+<text class="dg-tick" x="134.0" y="296" text-anchor="middle">1</text>
+<line class="dg-axis" x1="258.0" y1="280" x2="258.0" y2="284"/>
+<text class="dg-tick" x="258.0" y="296" text-anchor="middle">2</text>
+<line class="dg-axis" x1="382.0" y1="280" x2="382.0" y2="284"/>
+<text class="dg-tick" x="382.0" y="296" text-anchor="middle">3</text>
+<line class="dg-axis" x1="506.0" y1="280" x2="506.0" y2="284"/>
+<text class="dg-tick" x="506.0" y="296" text-anchor="middle">4</text>
+<line class="dg-axis" x1="630.0" y1="280" x2="630.0" y2="284"/>
+<text class="dg-tick" x="630.0" y="296" text-anchor="middle">5</text>
+<line class="dg-axis" x1="754.0" y1="280" x2="754.0" y2="284"/>
+<text class="dg-tick" x="754.0" y="296" text-anchor="middle">6</text>
+<text class="dg-tick" x="64" y="283.0" text-anchor="end">99.6%</text>
+<text class="dg-tick" x="64" y="223.0" text-anchor="end">99.7%</text>
+<text class="dg-tick" x="64" y="163.0" text-anchor="end">99.8%</text>
+<text class="dg-tick" x="64" y="103.0" text-anchor="end">99.9%</text>
+<text class="dg-tick" x="64" y="43.0" text-anchor="end">100.0%</text>
+<text class="dg-axis-label" x="816" y="312" text-anchor="end">HARD DEPENDENCIES IN SERIES</text>
+<text class="dg-axis-label" x="72" y="30" text-anchor="start">AVAILABILITY IF INDEPENDENT</text>
+<rect class="dg-mask" x="633.6" y="108" width="108" height="12" rx="2"/><text class="dg-label dg-l-accent" x="687.6" y="117">CHECKOUT SLO 99.9%</text>
+<rect class="dg-mask" x="360.0" y="166.9" width="136" height="12" rx="2"/><text class="dg-label" x="428.0" y="175.9">FOUR AT 99.95% ≈ 99.80%</text>
+<rect class="dg-mask" x="380.0" y="37.0" width="140" height="12" rx="2"/><text class="dg-label dg-l-link" x="450.0" y="46.0">THREE AT 99.99% ≈ 99.97%</text>
+<rect class="dg-mask" x="656.0" y="226.8" width="88" height="12" rx="2"/><text class="dg-label" x="700.0" y="235.8">EACH AT 99.95%</text>
+<rect class="dg-mask" x="656.0" y="57.0" width="88" height="12" rx="2"/><text class="dg-label dg-l-link" x="700.0" y="66.0">EACH AT 99.99%</text>
+<line class="dg-series dg-s-accent" x1="72" y1="100.0" x2="816" y2="100.0" stroke-dasharray="5 4"/>
+<polyline class="dg-series dg-s-ink" points="134.0,70.0 258.0,100.0 382.0,130.0 506.0,159.9 630.0,189.9 754.0,219.8"/>
+<polyline class="dg-series dg-s-link" points="134.0,46.0 258.0,52.0 382.0,58.0 506.0,64.0 630.0,70.0 754.0,76.0"/>
+<circle class="dg-dot dg-dot-ink" cx="134.0" cy="70.0" r="3.5"/>
+<circle class="dg-dot dg-dot-ink" cx="258.0" cy="100.0" r="3.5"/>
+<circle class="dg-dot dg-dot-ink" cx="382.0" cy="130.0" r="3.5"/>
+<circle class="dg-dot dg-dot-ink" cx="506.0" cy="159.9" r="3.5"/>
+<circle class="dg-dot dg-dot-ink" cx="630.0" cy="189.9" r="3.5"/>
+<circle class="dg-dot dg-dot-ink" cx="754.0" cy="219.8" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="134.0" cy="46.0" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="258.0" cy="52.0" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="382.0" cy="58.0" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="506.0" cy="64.0" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="630.0" cy="70.0" r="3.5"/>
+<circle class="dg-dot dg-dot-link" cx="754.0" cy="76.0" r="3.5"/>
+
+</svg></div></div>

@@ -1,0 +1,50 @@
+<div class="dg-figure" data-fig="fig-3-1" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 372" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-3-1-title fig-3-1-desc">
+<title id="fig-3-1-title">Three governors on one lever</title>
+<desc id="fig-3-1-desc">A sketch of Catalog&#x27;s replica count over half an hour. An engineer scales it from 20 to 60; within seconds the GitOps agent restores the manifest&#x27;s 20. When browsing ebbs, the autoscaler waits out its five-minute scale-down window and then trims toward its floor of 12; the GitOps agent restores 20 within seconds, and the two trade the count several times a minute for the rest of the half hour, while the engineer believes the service is at 60.</desc>
+<defs><marker id="fig-3-1-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-3-1-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-3-1-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-grid" x1="72" y1="272.0" x2="816" y2="272.0"/>
+<line class="dg-grid" x1="72" y1="232.2" x2="816" y2="232.2"/>
+<line class="dg-grid" x1="72" y1="205.7" x2="816" y2="205.7"/>
+<line class="dg-grid" x1="72" y1="139.4" x2="816" y2="139.4"/>
+<line class="dg-grid" x1="72" y1="73.1" x2="816" y2="73.1"/>
+<line class="dg-axis" x1="72" y1="272" x2="816" y2="272"/>
+<line class="dg-axis" x1="72" y1="272" x2="72" y2="40"/>
+<line class="dg-axis" x1="72.0" y1="272" x2="72.0" y2="276"/>
+<text class="dg-tick" x="72.0" y="288" text-anchor="middle">0</text>
+<line class="dg-axis" x1="196.0" y1="272" x2="196.0" y2="276"/>
+<text class="dg-tick" x="196.0" y="288" text-anchor="middle">6</text>
+<line class="dg-axis" x1="320.0" y1="272" x2="320.0" y2="276"/>
+<text class="dg-tick" x="320.0" y="288" text-anchor="middle">12</text>
+<line class="dg-axis" x1="444.0" y1="272" x2="444.0" y2="276"/>
+<text class="dg-tick" x="444.0" y="288" text-anchor="middle">18</text>
+<line class="dg-axis" x1="568.0" y1="272" x2="568.0" y2="276"/>
+<text class="dg-tick" x="568.0" y="288" text-anchor="middle">24</text>
+<line class="dg-axis" x1="692.0" y1="272" x2="692.0" y2="276"/>
+<text class="dg-tick" x="692.0" y="288" text-anchor="middle">30</text>
+<line class="dg-axis" x1="816.0" y1="272" x2="816.0" y2="276"/>
+<text class="dg-tick" x="816.0" y="288" text-anchor="middle">36</text>
+<text class="dg-tick" x="64" y="275.0" text-anchor="end">0</text>
+<text class="dg-tick" x="64" y="235.2" text-anchor="end">12</text>
+<text class="dg-tick" x="64" y="208.7" text-anchor="end">20</text>
+<text class="dg-tick" x="64" y="142.4" text-anchor="end">40</text>
+<text class="dg-tick" x="64" y="76.1" text-anchor="end">60</text>
+<text class="dg-axis-label" x="816" y="304" text-anchor="end">MINUTES</text>
+<text class="dg-axis-label" x="72" y="30" text-anchor="start">CATALOG REPLICAS</text>
+<rect class="dg-area dg-ar-soft" x="196.0" y="40" width="103.3" height="232"/>
+<rect class="dg-mask" x="530.08" y="53.1429" width="152" height="12" rx="2"/><text class="dg-label" x="606.08" y="62.1429">WHAT THE ENGINEER BELIEVED</text>
+<rect class="dg-mask" x="733.68" y="240.229" width="60" height="12" rx="2"/><text class="dg-label" x="763.68" y="249.229">HPA FLOOR</text>
+<rect class="dg-mask" x="142.0" y="56.1" width="108" height="12" rx="2"/><text class="dg-label dg-l-accent" x="196.0" y="65.1">KUBECTL SCALE → 60</text>
+<rect class="dg-mask" x="145.1" y="133.4" width="148" height="12" rx="2"/><text class="dg-label" x="219.1" y="142.4">GITOPS REVERTS IN SECONDS</text>
+<rect class="dg-mask" x="200.0" y="186.7" width="80" height="12" rx="2"/><text class="dg-label" x="240.0" y="195.7">BROWSING EBBS</text>
+<rect class="dg-mask" x="200.0" y="103.9" width="136" height="12" rx="2"/><text class="dg-label" x="268.0" y="112.9">5-MIN SCALE-DOWN WINDOW</text>
+<rect class="dg-mask" x="361.3" y="182.7" width="280" height="12" rx="2"/><text class="dg-label" x="501.3" y="191.7">HPA TRIMS, GITOPS RESTORES, SEVERAL TIMES A MINUTE</text>
+<line class="dg-series dg-s-soft" x1="72" y1="73.1" x2="816" y2="73.1" stroke-dasharray="5 4"/>
+<line class="dg-series dg-s-soft" x1="72" y1="232.2" x2="816" y2="232.2" stroke-dasharray="5 4"/>
+<polyline class="dg-series dg-s-accent" points="72.0,205.7 134.0,205.7 134.0,73.1 137.1,73.1 137.1,205.7 299.3,205.7 299.3,205.7 299.3,232.2 301.8,232.2 301.8,205.7 307.6,205.7 307.6,232.2 310.1,232.2 310.1,205.7 315.9,205.7 315.9,232.2 318.3,232.2 318.3,205.7 324.1,205.7 324.1,232.2 326.6,232.2 326.6,205.7 332.4,205.7 332.4,232.2 334.9,232.2 334.9,205.7 340.7,205.7 340.7,232.2 343.1,232.2 343.1,205.7 348.9,205.7 348.9,232.2 351.4,232.2 351.4,205.7 357.2,205.7 357.2,232.2 359.7,232.2 359.7,205.7 365.5,205.7 365.5,232.2 367.9,232.2 367.9,205.7 373.7,205.7 373.7,232.2 376.2,232.2 376.2,205.7 382.0,205.7 382.0,232.2 384.5,232.2 384.5,205.7 390.3,205.7 390.3,232.2 392.7,232.2 392.7,205.7 398.5,205.7 398.5,232.2 401.0,232.2 401.0,205.7 406.8,205.7 406.8,232.2 409.3,232.2 409.3,205.7 415.1,205.7 415.1,232.2 417.5,232.2 417.5,205.7 423.3,205.7 423.3,232.2 425.8,232.2 425.8,205.7 431.6,205.7 431.6,232.2 434.1,232.2 434.1,205.7 439.9,205.7 439.9,232.2 442.3,232.2 442.3,205.7 448.1,205.7 448.1,232.2 450.6,232.2 450.6,205.7 456.4,205.7 456.4,232.2 458.9,232.2 458.9,205.7 464.7,205.7 464.7,232.2 467.1,232.2 467.1,205.7 472.9,205.7 472.9,232.2 475.4,232.2 475.4,205.7 481.2,205.7 481.2,232.2 483.7,232.2 483.7,205.7 489.5,205.7 489.5,232.2 491.9,232.2 491.9,205.7 497.7,205.7 497.7,232.2 500.2,232.2 500.2,205.7 506.0,205.7 506.0,232.2 508.5,232.2 508.5,205.7 514.3,205.7 514.3,232.2 516.7,232.2 516.7,205.7 522.5,205.7 522.5,232.2 525.0,232.2 525.0,205.7 530.8,205.7 530.8,232.2 533.3,232.2 533.3,205.7 539.1,205.7 539.1,232.2 541.5,232.2 541.5,205.7 547.3,205.7 547.3,232.2 549.8,232.2 549.8,205.7 555.6,205.7 555.6,232.2 558.1,232.2 558.1,205.7 563.9,205.7 563.9,232.2 566.3,232.2 566.3,205.7 572.1,205.7 572.1,232.2 574.6,232.2 574.6,205.7 580.4,205.7 580.4,232.2 582.9,232.2 582.9,205.7 588.7,205.7 588.7,232.2 591.1,232.2 591.1,205.7 596.9,205.7 596.9,232.2 599.4,232.2 599.4,205.7 605.2,205.7 605.2,232.2 607.7,232.2 607.7,205.7 613.5,205.7 613.5,232.2 615.9,232.2 615.9,205.7 621.7,205.7 621.7,232.2 624.2,232.2 624.2,205.7 630.0,205.7 630.0,232.2 632.5,232.2 632.5,205.7 638.3,205.7 638.3,232.2 640.7,232.2 640.7,205.7 646.5,205.7 646.5,232.2 649.0,232.2 649.0,205.7 654.8,205.7 654.8,232.2 657.3,232.2 657.3,205.7 663.1,205.7 663.1,232.2 665.5,232.2 665.5,205.7 671.3,205.7 671.3,232.2 673.8,232.2 673.8,205.7 679.6,205.7 679.6,232.2 682.1,232.2 682.1,205.7 687.9,205.7 687.9,232.2 690.3,232.2 690.3,205.7 696.1,205.7 696.1,232.2 698.6,232.2 698.6,205.7 704.4,205.7 704.4,232.2 706.9,232.2 706.9,205.7 712.7,205.7 712.7,232.2 715.1,232.2 715.1,205.7 720.9,205.7 720.9,232.2 723.4,232.2 723.4,205.7 729.2,205.7 729.2,232.2 731.7,232.2 731.7,205.7 737.5,205.7 737.5,232.2 739.9,232.2 739.9,205.7 745.7,205.7 745.7,232.2 748.2,232.2 748.2,205.7 754.0,205.7 754.0,232.2 756.5,232.2 756.5,205.7 762.3,205.7 762.3,232.2 764.7,232.2 764.7,205.7 770.5,205.7 770.5,232.2 773.0,232.2 773.0,205.7 778.8,205.7 778.8,232.2 781.3,232.2 781.3,205.7 787.1,205.7 787.1,232.2 789.5,232.2 789.5,205.7 795.3,205.7 795.3,232.2 797.8,232.2 797.8,205.7 803.6,205.7 803.6,232.2 806.1,232.2 806.1,205.7 811.9,205.7 811.9,232.2 814.3,232.2 814.3,205.7 816.0,205.7"/>
+<line class="dg-rule" x1="24" y1="332" x2="840" y2="332"/>
+<line class="dg-a dg-a-accent" x1="24" y1="348" x2="48" y2="348" marker-end="url(#fig-3-1-m-accent)"/>
+<text class="dg-legend" x="56" y="351">Actual replicas</text>
+<line class="dg-a dg-a-muted dg-dash" x1="168" y1="348" x2="192" y2="348" marker-end="url(#fig-3-1-m-muted)"/>
+<text class="dg-legend" x="200" y="351">Belief and floor</text>
+</svg></div></div>

@@ -1,0 +1,113 @@
+<div class="dg-figure" data-fig="fig-1-1" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 596" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-1-1-title fig-1-1-desc">
+<title id="fig-1-1-title">Encore&#x27;s system map</title>
+<desc id="fig-1-1-desc">Fans, organizers, partners and tenants enter through the API gateway. The purchase path runs from the Sale Gate through Bot Screening and Seat Inventory to Orders &amp; Payments and the external payment providers, two of them. Catalog uses a bought search product; Support uses the AI gateway to reach model providers and asks Orders for refunds. Seat Inventory and Orders publish to the ticket-sales.v2 stream, which Notifications, the Finance ledger and Sales Analytics consume.</desc>
+<defs><marker id="fig-1-1-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-1-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-1-1-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<path class="dg-a dg-a-muted" d="M 152,84 L 192,84" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 152,172 L 192,172" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 152,260 L 192,260" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 152,348 L 192,348" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 244,56 L 244,44 Q 244,36 252,36 L 588,36 Q 596,36 596,44 L 596,56" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-accent" d="M 296,84 L 404,84 Q 412,84 412,92 L 412,320" marker-end="url(#fig-1-1-m-accent)"/>
+<path class="dg-a dg-a-accent" d="M 488,348 L 520,348" marker-end="url(#fig-1-1-m-accent)"/>
+<path class="dg-a dg-a-muted" d="M 672,84 L 704,84" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 672,172 L 704,172" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 772,200 L 772,232" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted" d="M 560,200 L 560,296 Q 560,304 552,304 L 472,304 Q 464,304 464,312 L 464,320" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 336,260 L 328,260 Q 320,260 320,268 L 320,416" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 412,376 L 412,416" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 412,456 L 412,492" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 596,456 L 596,492" marker-end="url(#fig-1-1-m-muted)"/>
+<path class="dg-a dg-a-muted dg-dash" d="M 772,456 L 772,492" marker-end="url(#fig-1-1-m-muted)"/>
+<rect class="dg-mask" x="346" y="16" width="148" height="12" rx="2"/><text class="dg-label" x="420" y="25">BROWSE, SEARCH, SEAT MAPS</text>
+<rect class="dg-mask" x="568" y="246" width="48" height="12" rx="2"/><text class="dg-label" x="592" y="255">REFUNDS</text>
+<rect class="dg-mask" x="24" y="56" width="128" height="56" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="56" width="128" height="56" rx="6"/>
+<text class="dg-name" x="88" y="86">Fans</text>
+<text class="dg-sub" x="88" y="101">queue, seats, wallet</text>
+<rect class="dg-mask" x="24" y="144" width="128" height="56" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="144" width="128" height="56" rx="6"/>
+<text class="dg-name" x="88" y="174">Organizers</text>
+<text class="dg-sub" x="88" y="189">events, payouts</text>
+<rect class="dg-mask" x="24" y="232" width="128" height="56" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="232" width="128" height="56" rx="6"/>
+<text class="dg-name" x="88" y="262">Partners</text>
+<text class="dg-sub" x="88" y="277">venues, resale apps</text>
+<rect class="dg-mask" x="24" y="320" width="128" height="56" rx="6"/>
+<rect class="dg-n dg-n-input" x="24" y="320" width="128" height="56" rx="6"/>
+<text class="dg-name" x="88" y="350">Tenants</text>
+<text class="dg-sub" x="88" y="365">venues on SaaS cells</text>
+<rect class="dg-mask" x="192" y="56" width="104" height="320" rx="6"/>
+<rect class="dg-n dg-n-backend" x="192" y="56" width="104" height="320" rx="6"/>
+<text class="dg-name" x="244" y="218">API gateway</text>
+<text class="dg-sub" x="244" y="233">api.encore.com</text>
+<rect class="dg-mask" x="336" y="56" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="336" y="56" width="152" height="56" rx="6"/>
+<text class="dg-name" x="412" y="86">Sale Gate</text>
+<text class="dg-sub" x="412" y="101">waiting room, admission</text>
+<rect class="dg-mask" x="336" y="144" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="336" y="144" width="152" height="56" rx="6"/>
+<text class="dg-name" x="412" y="174">Bot Screening</text>
+<text class="dg-sub" x="412" y="189">rented edge signals</text>
+<rect class="dg-mask" x="336" y="232" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-store" x="336" y="232" width="152" height="56" rx="6"/>
+<text class="dg-name" x="412" y="262">Seat Inventory</text>
+<text class="dg-sub" x="412" y="277">4 shards, 5-min holds</text>
+<rect class="dg-mask" x="336" y="320" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="336" y="320" width="152" height="56" rx="6"/>
+<text class="dg-name" x="412" y="350">Orders &amp; Payments</text>
+<text class="dg-sub" x="412" y="365">purchase saga, 3 s</text>
+<rect class="dg-mask" x="520" y="56" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="520" y="56" width="152" height="56" rx="6"/>
+<text class="dg-name" x="596" y="86">Catalog</text>
+<text class="dg-sub" x="596" y="101">events, seat geometry</text>
+<rect class="dg-mask" x="520" y="144" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="520" y="144" width="152" height="56" rx="6"/>
+<text class="dg-name" x="596" y="174">Support</text>
+<text class="dg-sub" x="596" y="189">assistant, refund agent</text>
+<rect class="dg-mask" x="520" y="320" width="152" height="56" rx="6"/>
+<rect class="dg-n dg-n-external" x="520" y="320" width="152" height="56" rx="6"/>
+<text class="dg-name" x="596" y="350">PSPs</text>
+<text class="dg-sub" x="596" y="365">two; cards, ~800 ms</text>
+<rect class="dg-mask" x="704" y="56" width="136" height="56" rx="6"/>
+<rect class="dg-n dg-n-external" x="704" y="56" width="136" height="56" rx="6"/>
+<text class="dg-name" x="772" y="86">Search</text>
+<text class="dg-sub" x="772" y="101">a bought product</text>
+<rect class="dg-mask" x="704" y="144" width="136" height="56" rx="6"/>
+<rect class="dg-n dg-n-backend" x="704" y="144" width="136" height="56" rx="6"/>
+<text class="dg-name" x="772" y="174">AI gateway</text>
+<text class="dg-sub" x="772" y="189">routes model turns</text>
+<rect class="dg-mask" x="704" y="232" width="136" height="56" rx="6"/>
+<rect class="dg-n dg-n-external" x="704" y="232" width="136" height="56" rx="6"/>
+<text class="dg-name" x="772" y="262">Model providers</text>
+<text class="dg-sub" x="772" y="277">frontier, cheap tier</text>
+<rect class="dg-mask" x="312" y="416" width="528" height="40" rx="6"/>
+<rect class="dg-n dg-n-store" x="312" y="416" width="528" height="40" rx="6"/>
+<text class="dg-name" x="576" y="438">ticket-sales.v2</text>
+<text class="dg-sub" x="576" y="453">SeatReserved · SeatSold · TicketIssued · SaleCompleted</text>
+<rect class="dg-mask" x="336" y="492" width="152" height="52" rx="6"/>
+<rect class="dg-n dg-n-backend" x="336" y="492" width="152" height="52" rx="6"/>
+<text class="dg-name" x="412" y="520">Notifications</text>
+<text class="dg-sub" x="412" y="535">email, wallet passes</text>
+<rect class="dg-mask" x="520" y="492" width="152" height="52" rx="6"/>
+<rect class="dg-n dg-n-store" x="520" y="492" width="152" height="52" rx="6"/>
+<text class="dg-name" x="596" y="520">Finance ledger</text>
+<text class="dg-sub" x="596" y="535">daily reconcile</text>
+<rect class="dg-mask" x="704" y="492" width="136" height="52" rx="6"/>
+<rect class="dg-n dg-n-backend" x="704" y="492" width="136" height="52" rx="6"/>
+<text class="dg-name" x="772" y="520">Sales Analytics</text>
+<text class="dg-sub" x="772" y="535">a consumer only</text>
+<line class="dg-rule" x1="24" y1="556" x2="840" y2="556"/>
+<rect class="dg-n dg-n-input" x="24" y="567" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="46" y="575">People</text>
+<rect class="dg-n dg-n-backend" x="107" y="567" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="129" y="575">Encore service</text>
+<rect class="dg-n dg-n-store" x="235" y="567" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="257" y="575">Holds the record</text>
+<rect class="dg-n dg-n-external" x="374" y="567" width="16" height="10" rx="2"/>
+<text class="dg-legend" x="396" y="575">Bought or outside</text>
+<line class="dg-a dg-a-accent" x1="519" y1="572" x2="543" y2="572" marker-end="url(#fig-1-1-m-accent)"/>
+<text class="dg-legend" x="551" y="575">Purchase path</text>
+<line class="dg-a dg-a-muted dg-dash" x1="651" y1="572" x2="675" y2="572" marker-end="url(#fig-1-1-m-muted)"/>
+<text class="dg-legend" x="683" y="575">Event, not a call</text>
+</svg></div></div>

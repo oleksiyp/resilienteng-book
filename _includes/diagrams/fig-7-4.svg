@@ -1,0 +1,49 @@
+<div class="dg-figure" data-fig="fig-7-4" style="--dg-w:864px"><div class="dg-scroll"><svg class="dg" viewBox="0 0 864 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fig-7-4-title fig-7-4-desc">
+<title id="fig-7-4-title">Patching a known-exploited flaw in 48 hours</title>
+<desc id="fig-7-4-desc">Images redeployed against hours since disclosure. SBOM queries found 37 affected images in 20 minutes; a WAF rule went up within 6 hours; 35 images were redeployed by hour 30 and all 37 of Encore&#x27;s own by hour 48, the deadline. The vendor&#x27;s monitoring agent, confined by an egress rule, was fixed four days later.</desc>
+<defs><marker id="fig-7-4-m-muted" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-muted" points="0 0, 8 3, 0 6"/></marker><marker id="fig-7-4-m-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-accent" points="0 0, 8 3, 0 6"/></marker><marker id="fig-7-4-m-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon class="dg-head dg-head-link" points="0 0, 8 3, 0 6"/></marker></defs>
+<rect class="dg-paper" width="100%" height="100%" rx="8"/>
+<line class="dg-grid" x1="72" y1="256.0" x2="816" y2="256.0"/>
+<line class="dg-grid" x1="72" y1="204.0" x2="816" y2="204.0"/>
+<line class="dg-grid" x1="72" y1="152.0" x2="816" y2="152.0"/>
+<line class="dg-grid" x1="72" y1="100.0" x2="816" y2="100.0"/>
+<line class="dg-grid" x1="72" y1="63.6" x2="816" y2="63.6"/>
+<line class="dg-axis" x1="72" y1="256" x2="816" y2="256"/>
+<line class="dg-axis" x1="72" y1="256" x2="72" y2="48"/>
+<line class="dg-axis" x1="72.0" y1="256" x2="72.0" y2="260"/>
+<text class="dg-tick" x="72.0" y="272" text-anchor="middle">0 H</text>
+<line class="dg-axis" x1="191.0" y1="256" x2="191.0" y2="260"/>
+<text class="dg-tick" x="191.0" y="272" text-anchor="middle">24 H</text>
+<line class="dg-axis" x1="310.1" y1="256" x2="310.1" y2="260"/>
+<text class="dg-tick" x="310.1" y="272" text-anchor="middle">48 H</text>
+<line class="dg-axis" x1="429.1" y1="256" x2="429.1" y2="260"/>
+<text class="dg-tick" x="429.1" y="272" text-anchor="middle">72 H</text>
+<line class="dg-axis" x1="548.2" y1="256" x2="548.2" y2="260"/>
+<text class="dg-tick" x="548.2" y="272" text-anchor="middle">96 H</text>
+<line class="dg-axis" x1="667.2" y1="256" x2="667.2" y2="260"/>
+<text class="dg-tick" x="667.2" y="272" text-anchor="middle">120 H</text>
+<line class="dg-axis" x1="786.2" y1="256" x2="786.2" y2="260"/>
+<text class="dg-tick" x="786.2" y="272" text-anchor="middle">144 H</text>
+<text class="dg-tick" x="64" y="259.0" text-anchor="end">0</text>
+<text class="dg-tick" x="64" y="207.0" text-anchor="end">10</text>
+<text class="dg-tick" x="64" y="155.0" text-anchor="end">20</text>
+<text class="dg-tick" x="64" y="103.0" text-anchor="end">30</text>
+<text class="dg-tick" x="64" y="66.6" text-anchor="end">37</text>
+<text class="dg-axis-label" x="816" y="288" text-anchor="end">HOURS SINCE DISCLOSURE</text>
+<text class="dg-axis-label" x="72" y="38" text-anchor="start">AFFECTED IMAGES REDEPLOYED</text>
+<rect class="dg-area dg-ar-soft" x="310.1" y="48" width="476.2" height="208"/>
+<rect class="dg-mask" x="418.16" y="170.4" width="260" height="12" rx="2"/><text class="dg-label" x="548.16" y="179.4">VENDOR TAIL · AGENT CONFINED BY AN EGRESS RULE</text>
+<rect class="dg-mask" x="109.76" y="50.32" width="88" height="12" rx="2"/><text class="dg-label" x="153.76" y="59.32">WAF RULE · 6 H</text>
+<rect class="dg-mask" x="318.08" y="146" width="80" height="12" rx="2"/><text class="dg-label dg-l-accent" x="358.08" y="155">48 H DEADLINE</text>
+<rect class="dg-mask" x="121.6" y="231.4" width="172" height="12" rx="2"/><text class="dg-label" x="207.6" y="240.4">20 MIN: SBOMS LOCATE 37 IMAGES</text>
+<rect class="dg-mask" x="224.8" y="81.0" width="80" height="12" rx="2"/><text class="dg-label" x="264.8" y="90.0">35 BY HOUR 30</text>
+<rect class="dg-mask" x="318.1" y="46.6" width="128" height="12" rx="2"/><text class="dg-label" x="382.1" y="55.6">ALL 37 OF ENCORE&#x27;S OWN</text>
+<rect class="dg-mask" x="622.2" y="41.4" width="156" height="12" rx="2"/><text class="dg-label" x="700.2" y="50.4">VENDOR AGENT · 4 DAYS LATER</text>
+<line class="dg-series dg-s-soft" x1="101.8" y1="48" x2="101.8" y2="256" stroke-dasharray="5 4"/>
+<line class="dg-series dg-s-accent" x1="310.1" y1="48" x2="310.1" y2="256" stroke-dasharray="5 4"/>
+<polyline class="dg-series dg-s-ink" points="72.0,256.0 220.8,74.0 310.1,63.6 786.2,63.6"/>
+<circle class="dg-dot dg-dot-ink" cx="220.8" cy="74.0" r="4"/>
+<circle class="dg-dot dg-dot-ink" cx="310.1" cy="63.6" r="4"/>
+<circle class="dg-dot dg-dot-accent" cx="786.2" cy="58.4" r="4"/>
+
+</svg></div></div>

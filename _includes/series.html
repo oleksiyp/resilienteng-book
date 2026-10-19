@@ -1,0 +1,35 @@
+{%- comment -%} The series shelf: standing books on wide screens, a swipeable row of covers on phones.
+Pass heading="..." to change the title line. {%- endcomment -%}
+<section class="series" aria-labelledby="series-title">
+    <div class="series__inner">
+        <p class="series__label">The AI &amp; Cloud Era series</p>
+        <h2 class="series__title" id="series-title">{{ include.heading | default: "One question, asked from several sides" }}</h2>
+        <ol class="series__shelf">
+            {%- for b in site.data.series %}
+            {%- assign current = false %}{% if b.key == site.series_key %}{% assign current = true %}{% endif %}
+            <li class="series__item{% if current %} is-current{% endif %}{% if b.status == 'writing' %} is-soon{% endif %}" style="--spine: {{ b.spine | default: 0.1 }}">
+                {%- if b.status == 'writing' %}
+                <div class="series__book" aria-label="Book {{ forloop.index }}, {{ b.title }}: in writing">
+                    <span class="series__3d" aria-hidden="true"><span class="series__front series__blank">{{ b.title }}</span><span class="series__spine series__blank"></span></span>
+                {%- else %}
+                <a class="series__book" href="{{ b.url }}"{% if current %} aria-current="page"{% endif %}>
+                    <span class="series__3d" aria-hidden="true"><img class="series__front" src="{{ '/assets/series/' | append: b.key | append: '-front.webp' | relative_url }}" alt="" width="120" height="180" loading="lazy" decoding="async"><img class="series__spine" src="{{ '/assets/series/' | append: b.key | append: '-spine.webp' | relative_url }}" alt="" loading="lazy" decoding="async"></span>
+                {%- endif %}
+                    <span class="series__cap">
+                        <span class="series__num">Book {{ forloop.index }}{% if current %} · reading now{% endif %}</span>
+                        <span class="series__name">{{ b.title }}</span>
+                        <span class="series__sub">{{ b.subtitle }}</span>
+                    </span>
+                {%- if b.status == 'writing' %}</div>{% else %}</a>{% endif %}
+            </li>
+            {%- endfor %}
+        </ol>
+    </div>
+</section>
+<script>
+// On phones the shelf scrolls sideways: open it with the book being read in the middle
+document.querySelectorAll('.series__shelf').forEach(function (s) {
+    var c = s.querySelector('.is-current');
+    if (c && s.scrollWidth > s.clientWidth) s.scrollLeft = c.offsetLeft - (s.clientWidth - c.offsetWidth) / 2;
+});
+</script>

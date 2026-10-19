@@ -9,3 +9,6 @@ newsletter_api: ""
 # Firebase Realtime Database URL for the live reader counter and reading statistics; empty hides them
 presence_database_url: ""
 exclude: [scripts, venv, cover-lab, drafting, OUTLINE.md]
+# This book's place in the series (_data/series.yml) and the page that ends it, where the shelf shows again
+series_key: resilience
+series_last: /ch/9/

@@ -1,0 +1,21 @@
+# The AI & Cloud Era series, in reading order. Shared by every book's site: keep the copies identical.
+# key: matches series_key in each book's _config.yml; spine: spine width as a share of the front cover's width
+- key: architecture
+  title: Software Architecture
+  subtitle: The road to platform architecture
+  url: https://oleksiyp.github.io/arch-book/
+  spine: 0.0917
+- key: products
+  title: Building Products & Platforms
+  subtitle: In writing
+  status: writing
+- key: resilience
+  title: Building Resilient Systems
+  subtitle: Production engineering
+  url: https://oleksiyp.github.io/resilienteng-book/
+  spine: 0.125
+- key: operations
+  title: Operating Production Systems
+  subtitle: When production fails
+  url: https://oleksiyp.github.io/prodsys-book/
+  spine: 0.1167

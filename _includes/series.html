@@ -58,7 +58,8 @@ Pass open=true to show it open (the last chapter does). {%- endcomment -%}
     var c = shelf.querySelector('.is-current');
     if (c && shelf.scrollWidth > shelf.clientWidth) shelf.scrollLeft = c.offsetLeft - (shelf.clientWidth - c.offsetWidth) / 2;
     requestAnimationFrame(function () { sec.classList.add('can-animate'); });
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
+        if (e.detail) btn.blur();   // a mouse or a finger, not the keyboard: no focus ring
         var o = !sec.classList.contains('is-open');
         set(o);
         try { localStorage.setItem('series-open', o ? '1' : '0'); } catch (e) {}

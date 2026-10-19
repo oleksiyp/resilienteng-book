@@ -16,6 +16,6 @@
   spine: 0.125
 - key: operations
   title: Operating Production Systems
-  subtitle: When production fails
+  subtitle: Keeping systems running
   url: https://oleksiyp.github.io/prodsys-book/
   spine: 0.1167

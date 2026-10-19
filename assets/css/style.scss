@@ -1519,12 +1519,14 @@ $wood-walnut: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' 
     --wood: #{$wood-oak};
     --wood-ink: #3a210d;
     --wood-glow: rgba(255, 228, 190, 0.4);
+    --wood-side: #a8713f;
+    --wood-back: rgba(62, 34, 12, 0.62);
     --series-bg: #e9e6df;
     --series-ink: #1b1f3b;
     --series-muted: #5c6178;
     --series-accent: #d9482b;
     --series-blank: rgba(27, 31, 59, 0.35);
-    --cover-w: 7.5rem;
+    --cover-w: 8.5rem;
     background: var(--series-bg);
     color: var(--series-ink);
     border-bottom: 1px solid rgba(27, 31, 59, 0.08);
@@ -1534,6 +1536,8 @@ html[data-theme="dark"] .series {
     --wood: #{$wood-walnut};
     --wood-ink: #f3e2c8;
     --wood-glow: rgba(0, 0, 0, 0.5);
+    --wood-side: #573620;
+    --wood-back: rgba(20, 10, 4, 0.6);
     --series-bg: #151931;
     --series-ink: #e8ecf3;
     --series-muted: #a9b2c3;
@@ -1573,11 +1577,16 @@ html[data-theme="dark"] .series {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 
+    transition: border-radius 0.3s ease;
+
     &:focus-visible {
         outline: 2px solid var(--series-accent);
         outline-offset: 3px;
     }
 }
+
+/* Open, the plank is the top board of a bookcase */
+.series.is-open .series__plank { border-radius: 5px 5px 0 0; }
 
 .series__sign {
     display: flex;
@@ -1635,27 +1644,49 @@ html[data-theme="dark"] .series {
 }
 
 .series__shelf {
+    --pad: 1.8rem;
     position: relative;
+    isolation: isolate;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
     margin: 0;
-    padding: 2rem 0 0.4rem;
+    padding: var(--pad) 1.4rem 0.4rem;
     list-style: none;
 
-    /* the shelf the books stand on */
+    /* the back of the case, between its side boards, in the shadow of the top board */
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: calc(var(--pad) + var(--cover-w) * 1.5);
+        background: linear-gradient(var(--wood-back), var(--wood-back)), var(--wood) 0 0 / 900px 140px;
+        box-shadow:
+            inset 0.7rem 0 0 var(--wood-side),
+            inset -0.7rem 0 0 var(--wood-side),
+            inset 0 1.4rem 1.4rem -0.8rem rgba(0, 0, 0, 0.55),
+            inset 1.6rem 0 1.2rem -1rem rgba(0, 0, 0, 0.35),
+            inset -1.6rem 0 1.2rem -1rem rgba(0, 0, 0, 0.35);
+    }
+
+    /* the shelf the books stand on: a lit top face over the front edge */
     &::before {
         content: "";
         position: absolute;
         left: 0;
         right: 0;
-        top: calc(2rem + var(--cover-w) * 1.5);
-        height: 0.8rem;
-        border-radius: 3px;
+        top: calc(var(--pad) + var(--cover-w) * 1.5);
+        height: 1.1rem;
+        border-radius: 0 0 4px 4px;
+        background: linear-gradient(rgba(255, 236, 205, 0.32) 0 0.3rem, rgba(0, 0, 0, 0.12) 0.3rem 0.36rem, transparent 0.36rem), var(--wood) 0 40px / 900px 140px;
     }
 }
 
 .series__item {
+    position: relative;
     margin: 0;
     min-width: 0;
 }
@@ -1664,7 +1695,7 @@ html[data-theme="dark"] .series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.6rem;
+    gap: 1.9rem;
     color: inherit;
     text-decoration: none;
     perspective: 900px;
@@ -1695,7 +1726,7 @@ html[data-theme="dark"] .series {
 .series__front {
     left: 0;
     width: 100%;
-    box-shadow: 6px 10px 18px -8px rgba(0, 0, 0, 0.45);
+    box-shadow: 6px 10px 18px -8px rgba(0, 0, 0, 0.6);
 }
 
 .series__spine {
@@ -1726,8 +1757,9 @@ html[data-theme="dark"] .series {
     align-items: center;
     justify-content: center;
     padding: 0.6rem;
-    border: 1.5px dashed var(--series-blank);
-    color: var(--series-muted);
+    border: 1.5px dashed rgba(255, 236, 205, 0.45);
+    color: rgba(255, 236, 205, 0.75);
+    background: rgba(255, 236, 205, 0.06);
     font-size: 0.8rem;
     font-weight: 700;
     line-height: 1.25;
@@ -1774,6 +1806,8 @@ html[data-theme="dark"] .series {
 @media (max-width: 40rem) {
     .series { --cover-w: 6.5rem; }
 
+    .series__shelf { --pad: 1.3rem; }
+
     .series__inner { padding: 1.2rem 1rem; }
 
     .series__plank { padding: 0.75rem 1rem 0.95rem; }
@@ -1784,7 +1818,7 @@ html[data-theme="dark"] .series {
 
     .series__toggle { padding: 0.35rem 0.65rem; font-size: 0.8rem; }
 
-    .series__clip { margin-inline: -1rem; }
+    .series__clip { margin-inline: 0; }
 
     .series__shelf {
         display: flex;
@@ -1792,19 +1826,18 @@ html[data-theme="dark"] .series {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-padding-inline: 1rem;
-        padding: 1.4rem 1rem 0.4rem;
+        padding: var(--pad) 1.6rem 0.4rem;
         scrollbar-width: none;
 
         &::-webkit-scrollbar { display: none; }
 
-        /* the shelf runs under the whole row and scrolls with it */
-        &::before {
-            top: calc(1.4rem + var(--cover-w) * 1.5);
-            left: 0;
+        /* the case runs behind the whole row and scrolls with it */
+        &::before, &::after {
             right: auto;
-            width: calc(4 * var(--cover-w) + 3rem + 2rem);
-            height: 0.6rem;
+            width: calc(4 * var(--cover-w) + 3rem + 3.2rem);
         }
+
+        &::before { height: 0.9rem; }
     }
 
     .series__item {

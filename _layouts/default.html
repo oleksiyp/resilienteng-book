@@ -117,7 +117,7 @@
 <section class="main-content">
     {{ content }}
 </section>
-{% if page.url == site.series_last %}{% include series.html heading="Where to go next" %}{% endif %}
+{% if page.url == site.series_last %}{% include series.html open=true %}{% endif %}
 {% if site.newsletter_api != "" %}
 <section class="nl-inline" hidden aria-labelledby="nl-inline-title">
     <h2 id="nl-inline-title">Resilience Book weekly</h2>

@@ -1508,14 +1508,21 @@ svg.dg { width: 100%; height: auto; display: block; }
 .dg .dg-ill-fill { fill: var(--dg-backend); stroke: var(--dg-ink); stroke-width: 1.2; }
 .dg .dg-ill-fill-accent { fill: RGBA(var(--dg-accent-rgb), 0.10); stroke: var(--dg-accent); stroke-width: 1.4; }
 
-/* The series shelf (_includes/series.html): on wide screens the books stand on a shelf,
-   turned to show their spines; on phones the same list becomes a row of covers to swipe. */
+$wood-oak: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='140'%3E%3Cfilter id='w' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0025 0.16' numOctaves='5' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.36 0 0 0 0 0.2 0 0 0 0 0.08 0 0 0 -3.4 2.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23c08a55'/%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E");
+$wood-walnut: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='140'%3E%3Cfilter id='w' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.0025 0.16' numOctaves='5' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.11 0 0 0 0 0.04 0 0 0 -3.4 2.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%236a4429'/%3E%3Crect width='100%25' height='100%25' filter='url(%23w)'/%3E%3C/svg%3E");
+
+/* The series shelf (_includes/series.html). Closed, it is a wooden plank carrying the series name;
+   open, the books stand on a wooden shelf below it: turned to show their spines on wide screens,
+   a row of covers to swipe on phones. */
 .series {
+    /* oak by day, walnut by night: an SVG noise filter stretched sideways makes the grain */
+    --wood: #{$wood-oak};
+    --wood-ink: #3a210d;
+    --wood-glow: rgba(255, 228, 190, 0.4);
     --series-bg: #e9e6df;
     --series-ink: #1b1f3b;
     --series-muted: #5c6178;
     --series-accent: #d9482b;
-    --series-plank: #cfc9bd;
     --series-blank: rgba(27, 31, 59, 0.35);
     --cover-w: 7.5rem;
     background: var(--series-bg);
@@ -1524,11 +1531,13 @@ svg.dg { width: 100%; height: auto; display: block; }
 }
 
 html[data-theme="dark"] .series {
+    --wood: #{$wood-walnut};
+    --wood-ink: #f3e2c8;
+    --wood-glow: rgba(0, 0, 0, 0.5);
     --series-bg: #151931;
     --series-ink: #e8ecf3;
     --series-muted: #a9b2c3;
     --series-accent: #f0714f;
-    --series-plank: #2e3650;
     --series-blank: rgba(232, 236, 243, 0.35);
     border-bottom-color: transparent;
 }
@@ -1536,24 +1545,93 @@ html[data-theme="dark"] .series {
 .series__inner {
     max-width: 64rem;
     margin: 0 auto;
-    padding: 2.4rem 1.5rem 2.6rem;
+    padding: 1.6rem 1.5rem;
+}
+
+/* A board of wood: grain, a lit top edge, a darker front edge and a shadow beneath */
+.series__plank, .series__shelf::before {
+    background: var(--wood) 0 0 / 900px 140px;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 240, 215, 0.35),
+        inset 0 -5px 0 rgba(40, 20, 5, 0.28),
+        0 12px 18px -10px rgba(0, 0, 0, 0.55);
+}
+
+.series__plank {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    margin: 0;
+    padding: 0.85rem 1.4rem 1.05rem;
+    border: 0;
+    border-radius: 5px;
+    color: var(--wood-ink);
+    text-align: left;
+    font: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    &:focus-visible {
+        outline: 2px solid var(--series-accent);
+        outline-offset: 3px;
+    }
+}
+
+.series__sign {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+    text-shadow: 0 1px 0 var(--wood-glow);
 }
 
 .series__label {
-    margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--series-accent);
+    opacity: 0.85;
 }
 
 .series__title {
-    margin: 0.3rem 0 1.8rem;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: var(--series-ink);
+    line-height: 1.2;
     text-wrap: balance;
+}
+
+.series__toggle {
+    display: inline-flex;
+    flex: none;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-shadow: 0 1px 0 var(--wood-glow);
+
+    svg { transition: transform 0.3s ease; }
+}
+
+.series.is-open .series__toggle svg { transform: rotate(180deg); }
+
+/* Opening: the body grows from nothing to its height (grid rows animate where height cannot) */
+.series__body {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.series.js-ready:not(.is-open) .series__body { grid-template-rows: 0fr; }
+
+.series.can-animate .series__body { transition: grid-template-rows 0.45s ease; }
+
+.series__clip {
+    min-height: 0;
+    overflow: hidden;
 }
 
 .series__shelf {
@@ -1562,20 +1640,18 @@ html[data-theme="dark"] .series {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1.5rem;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0 0.4rem;
     list-style: none;
 
-    /* the plank the books stand on */
+    /* the shelf the books stand on */
     &::before {
         content: "";
         position: absolute;
-        left: -1rem;
-        right: -1rem;
-        top: calc(var(--cover-w) * 1.5);
-        height: 0.55rem;
-        border-radius: 2px;
-        background: var(--series-plank);
-        box-shadow: 0 8px 14px -8px rgba(0, 0, 0, 0.35);
+        left: 0;
+        right: 0;
+        top: calc(2rem + var(--cover-w) * 1.5);
+        height: 0.8rem;
+        border-radius: 3px;
     }
 }
 
@@ -1588,7 +1664,7 @@ html[data-theme="dark"] .series {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.3rem;
+    gap: 1.6rem;
     color: inherit;
     text-decoration: none;
     perspective: 900px;
@@ -1660,10 +1736,7 @@ html[data-theme="dark"] .series {
     box-sizing: border-box;
 }
 
-.series__spine.series__blank {
-    padding: 0;
-    border-width: 1.5px;
-}
+.series__spine.series__blank { padding: 0; }
 
 .series__cap {
     display: flex;
@@ -1697,15 +1770,21 @@ html[data-theme="dark"] .series {
 
 .is-soon .series__sub { font-style: italic; }
 
-/* Phones: no shelf, no 3D; a row of front covers that scrolls sideways */
+/* Phones: no 3D; a row of front covers that scrolls sideways along the shelf */
 @media (max-width: 40rem) {
     .series { --cover-w: 6.5rem; }
 
-    .series__inner { padding: 1.8rem 0 2rem; }
+    .series__inner { padding: 1.2rem 1rem; }
 
-    .series__label, .series__title { padding-inline: 1rem; }
+    .series__plank { padding: 0.75rem 1rem 0.95rem; }
 
-    .series__title { margin-bottom: 1.2rem; font-size: 1.15rem; }
+    .series__title { font-size: 1.1rem; }
+
+    .series__label { font-size: 0.66rem; }
+
+    .series__toggle { padding: 0.35rem 0.65rem; font-size: 0.8rem; }
+
+    .series__clip { margin-inline: -1rem; }
 
     .series__shelf {
         display: flex;
@@ -1713,12 +1792,19 @@ html[data-theme="dark"] .series {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-padding-inline: 1rem;
-        padding: 0.3rem 1rem 0.6rem;
-        -webkit-overflow-scrolling: touch;
+        padding: 1.4rem 1rem 0.4rem;
         scrollbar-width: none;
 
         &::-webkit-scrollbar { display: none; }
-        &::before { display: none; }
+
+        /* the shelf runs under the whole row and scrolls with it */
+        &::before {
+            top: calc(1.4rem + var(--cover-w) * 1.5);
+            left: 0;
+            right: auto;
+            width: calc(4 * var(--cover-w) + 3rem + 2rem);
+            height: 0.6rem;
+        }
     }
 
     .series__item {
@@ -1726,7 +1812,7 @@ html[data-theme="dark"] .series {
         scroll-snap-align: start;
     }
 
-    .series__book { gap: 0.7rem; perspective: none; }
+    .series__book { gap: 1.1rem; perspective: none; }
 
     .series__3d,
     .is-current .series__3d,
@@ -1745,7 +1831,7 @@ html[data-theme="dark"] .series {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .series__3d { transition: none; }
+    .series__3d, .series.can-animate .series__body, .series__toggle svg { transition: none; }
 }
 
 /* Contents: the appendix lines up with the numbered chapters above it, marked "A." */

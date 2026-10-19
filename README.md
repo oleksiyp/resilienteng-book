@@ -62,6 +62,7 @@ The nine chapters fall into four parts. They move from deciding what to promise,
 9. [Production Readiness — The Capstone](#ch9)
 
 [Appendix: Encore at a Glance](#encore-glance)
+{: .toc-appendix}
 
 ---
 

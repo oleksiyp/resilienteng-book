@@ -1747,3 +1747,18 @@ html[data-theme="dark"] .series {
 @media (prefers-reduced-motion: reduce) {
     .series__3d { transition: none; }
 }
+
+/* Contents: the appendix lines up with the numbered chapters above it, marked "A." */
+.main-content .toc-appendix {
+    position: relative;
+    margin-top: -0.4rem;
+    padding-left: 40px;
+
+    &::before {
+        content: "A.";
+        position: absolute;
+        left: 0;
+        width: 34px;
+        text-align: right;
+    }
+}

@@ -5,9 +5,11 @@ theme: jekyll-theme-cayman
 # GA4 measurement ID (G-XXXXXXXXXX); empty disables analytics entirely. Shared with the arch book; filter by path.
 google_analytics: "G-N146BPW9JR"
 # Weekly digest API; empty hides every newsletter control
-newsletter_api: ""
-# Firebase Realtime Database URL for the live reader counter and reading statistics; empty hides them
-presence_database_url: ""
+newsletter_api: "https://newsletter-api.zengarden.space"
+# Firebase Realtime Database URL for the live reader counter and reading statistics; empty hides them.
+# Shared by the whole series: "presence" counts readers of every book; stats_root keeps this book's statistics apart.
+stats_root: "stats-resilience"
+presence_database_url: "https://arch-book-b857d-default-rtdb.europe-west1.firebasedatabase.app"
 exclude: [scripts, venv, cover-lab, drafting, OUTLINE.md]
 # This book's place in the series (_data/series.yml) and the page that ends it, where the shelf shows again
 series_key: resilience

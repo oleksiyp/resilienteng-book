@@ -120,7 +120,7 @@
 {% if page.url == site.series_last %}{% include series.html open=true %}{% endif %}
 {% if site.newsletter_api != "" %}
 <section class="nl-inline" hidden aria-labelledby="nl-inline-title">
-    <h2 id="nl-inline-title">Resilience Book weekly</h2>
+    <h2 id="nl-inline-title">Arch Book weekly</h2>
     <div class="nl-box"></div>
 </section>
 {% endif %}
@@ -419,7 +419,7 @@
             law: { regionalLaw: false },
             location: false,
             content: {
-                message: 'This site uses cookies for anonymous usage statistics. Independently of cookies, reading progress is remembered only on your device.',
+                message: 'This site uses cookies for anonymous usage statistics. Independently of cookies, reading progress is remembered only on your device, and the site collects aggregate reading statistics with no identifiers.',
                 link: 'Privacy',
                 href: '{{ "/privacy/" | relative_url }}',
                 target: '_self',
@@ -681,7 +681,7 @@
             const paths = Object.keys(pending);
             if (!paths.length) return;
             const batch = {};
-            paths.forEach((p) => { batch['stats/' + p] = increment(Math.round(pending[p])); });
+            paths.forEach((p) => { batch['{{ site.stats_root | default: "stats" }}/' + p] = increment(Math.round(pending[p])); });
             pending = {};
             update(ref(db), batch).catch(() => {});
         }
@@ -976,7 +976,7 @@
         document.body.appendChild(overlay);
         closeBtn.focus();
 
-        fetch(DB + '/stats.json')
+        fetch(DB + '/{{ site.stats_root | default: "stats" }}.json')
             .then(function (r) { return r.json(); })
             .then(function (data) { cache = data; if (overlay) render(); })
             .catch(function () {
@@ -993,7 +993,7 @@
 {% endif %}
 <script src="{{ '/assets/js/book3d.js?v=' | append: site.github.build_revision | relative_url }}" defer></script>
 {% if site.newsletter_api != "" %}{% assign nl_chapter = "" %}{% if page.url contains "/ch/" %}{% assign nl_chapter = page.url | split: "/" | last %}{% endif %}
-<script src="{{ '/assets/js/newsletter.js?v=' | append: site.github.build_revision | relative_url }}" defer data-api="{{ site.newsletter_api }}" data-chapter="{{ nl_chapter }}"></script>{% endif %}
+<script src="{{ '/assets/js/newsletter.js?v=' | append: site.github.build_revision | relative_url }}" defer data-api="{{ site.newsletter_api }}" data-chapter=""></script>{% endif %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var el = document.getElementById('book-hero-stage');

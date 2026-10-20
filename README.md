@@ -2,7 +2,7 @@
 
 *Production Engineering*
 
-<small>© 2026 Oleksiy Pylypenko · Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — share and adapt freely, non-commercially, with attribution. Source on [GitHub](https://github.com/oleksiyp/resilienteng-book). Also in the series: [*Software Architecture in the AI & Cloud Era*](https://oleksiyp.github.io/arch-book/) and [*Operating Production Systems in the AI & Cloud Era*](https://oleksiyp.github.io/prodsys-book/).</small>
+<small>© 2026 Oleksiy Pylypenko · Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — share and adapt freely, non-commercially, with attribution. Source on [GitHub](https://github.com/oleksiyp/resilienteng-book). Also in the series: [*Software Architecture in the AI & Cloud Era*](https://oleksiyp.github.io/arch-book/), [*Building Products in the AI & Cloud Era*](https://oleksiyp.github.io/buildproducts-book/), [*Building Software at Scale in the AI & Cloud Era*](https://oleksiyp.github.io/buildsoftware-book/) and [*Operating Production Systems in the AI & Cloud Era*](https://oleksiyp.github.io/prodsys-book/).</small>
 
 ## Preface
 
@@ -12,7 +12,7 @@ I call that body of decisions **production engineering**: the work of designing,
 
 None of these techniques is as new as its tooling. Erlang worked out in the 1910s how many lines a telephone exchange needs; Maxwell explained in 1868 why a steam engine's governor could make the engine hunt; the Bell System chose its nines and engineered to them; AT&T's network showed in 1990 how a recovery path can carry a failure from switch to switch. The tools have changed almost beyond recognition, and the lessons beneath them have hardly changed at all. I have come to believe that the newest techniques are best understood, and best used, by someone who knows the older lessons that explain why they work, because a team that has the tool without the reason will misuse the tool the first time the situation departs from the tutorial. So each chapter roots today's practice in its lineage. AI appears where it really changes the practice, and nowhere else.
 
-This is the third book in a series. The first, *Software Architecture in the AI & Cloud Era*, which this book calls the Architecture book, asks how to shape a system; the second, *Building Products & Platforms*, is still in preparation. This one asks how to engineer that system so that it withstands production. *Operating Production Systems in the AI & Cloud Era*, the Operations book, follows it and asks what happens when production fails anyway: how complex systems fail, how people and automation respond in the moment, and how organizations learn from what went wrong. Each book stands on its own, but they share one company and one story, and they were written to be read together.
+This is the fourth book in a series. The first, *Software Architecture in the AI & Cloud Era*, which this book calls the Architecture book, asks how to shape a system. The second, *Building Products in the AI & Cloud Era*, the Products book, asks what to build, and the third, *Building Software at Scale in the AI & Cloud Era*, the Software book, asks how an organization of engineers builds it. This one asks how to engineer that system so that it withstands production. *Operating Production Systems in the AI & Cloud Era*, the Operations book, follows it and asks what happens when production fails anyway: how complex systems fail, how people and automation respond in the moment, and how organizations learn from what went wrong. Each book stands on its own, but they share one company and one story, and they were written to be read together.
 
 ### Influences & Attribution
 
@@ -1802,6 +1802,7 @@ GitLab's outage of January 2017 is the modern case, and its public postmortem is
 
 The echo of Pixar, nearly 20 years earlier, is hard to miss: backups failing unnoticed, a mistaken delete, and rescue by a copy made for some other reason. The past repeats because the failure is structural. Backups are written once and then trusted. Nothing in ordinary operation exercises them, so nothing reveals that they have quietly stopped working. One practice answers each of the two failure modes. The first is to alert on a backup's *absence*, rather than waiting for a failure report, since a job that fails badly enough may never manage to report anything, as GitLab's rejected emails showed. The rule below fires when the last successful backup of any system of record is more than 26 hours old, which is a daily schedule plus two hours' grace for a slow run:
 
+{% raw %}
 ```yaml
 - alert: BackupStale
   expr: time() - backup_last_success_timestamp_seconds{kind="system_of_record"} > 26 * 3600
@@ -1810,6 +1811,7 @@ The echo of Pixar, nearly 20 years earlier, is hard to miss: backups failing unn
   annotations:
     summary: "No successful backup of {{ $labels.store }} for over 26 hours"
 ```
+{% endraw %}
 
 The second practice addresses the invisible failure mode, and it is **continuous restore testing**: restores run on a schedule into an isolated environment, then verified against invariants. Verification is the part teams skip, and it is the part that matters, because a database that starts up can still be missing a day of data. The checks are things that must be true of a correct copy. Row counts should be close to the source's. Totals that must balance, such as money in against money out, should balance. The latest transactions known to exist should be present. Encore restores the Catalog and every Professional tenant database weekly, checks each against its source and records how long the restore took.
 

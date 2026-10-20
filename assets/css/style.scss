@@ -1526,7 +1526,8 @@ $wood-walnut: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' 
     --series-muted: #5c6178;
     --series-accent: #d9482b;
     --series-blank: rgba(27, 31, 59, 0.35);
-    --cover-w: 8.5rem;
+    /* five books across the case: as wide as 8.5rem, narrower when the column is */
+    --cover-w: clamp(5.5rem, calc((min(100vw, 64rem) - 10.6rem) / 5 - 0.4rem), 8.5rem);
     background: var(--series-bg);
     color: var(--series-ink);
     border-bottom: 1px solid rgba(27, 31, 59, 0.08);
@@ -1648,8 +1649,8 @@ html[data-theme="dark"] .series {
     position: relative;
     isolation: isolate;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.2rem;
     margin: 0;
     padding: var(--pad) 1.4rem 0.4rem;
     list-style: none;
@@ -1834,7 +1835,7 @@ html[data-theme="dark"] .series {
         /* the case runs behind the whole row and scrolls with it */
         &::before, &::after {
             right: auto;
-            width: calc(4 * var(--cover-w) + 3rem + 3.2rem);
+            width: calc(5 * var(--cover-w) + 4rem + 3.2rem);
         }
 
         &::before { height: 0.9rem; }

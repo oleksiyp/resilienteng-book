@@ -1,6 +1,6 @@
 # Building Resilient Systems in the AI & Cloud Era
 
-> A free online book on production engineering — SLOs, performance and capacity, Kubernetes and GitOps, shipping change safely, designing for failure, data and disaster recovery, security operations, operating AI workloads, and production readiness. 9 chapters, one running example (Encore, a concert-ticketing company), a kata per chapter. Book 3 of the AI & Cloud Era series; followed by "Operating Production Systems" (the Operations book).
+> A free online book on production engineering — SLOs, performance and capacity, Kubernetes and GitOps, shipping change safely, designing for failure, data and disaster recovery, security operations, operating AI workloads, and production readiness. 9 chapters, one running example (Encore, a concert-ticketing company), a kata per chapter. Book 4 of the AI & Cloud Era series; followed by "Operating Production Systems" (the Operations book).
 
 - [Full book, single page](https://oleksiyp.github.io/resilienteng-book/)
 - [Full book as raw markdown](https://oleksiyp.github.io/resilienteng-book/llms-full.txt)
